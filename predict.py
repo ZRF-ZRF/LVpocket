@@ -7,6 +7,7 @@ import time
 import numpy as np
 import pandas as pd
 import pybel
+from pybel import readfile
 import tensorflow as tf
 from LV_Net import LV_NET
 from tfbio.data import Featurizer
