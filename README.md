@@ -5,12 +5,18 @@
 
 
 #  Usage
-## 1.	 Clone this repository
+
+## 1. Download the model files
+
+    Links：https://pan.baidu.com/s/1kOUircaFHDdapegPvhzH3w 
+    Code：lvlv
+
+## 2.	 Clone this repository
 
     git clone https://github.com/ZRF-ZRF/LVpocket.git
     cd LVpocket
    
-## 2.   Python environment
+## 3.   Python environment
 
     conda create -n lvpocket python=3.6.13
     conda activate lvpocket
@@ -23,7 +29,7 @@
     conda install scipy=1.5
     conda install tqdm
 
-## 3.   Prediction
+## 4.   Prediction
 
     python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model all_scPDB_model.hdf --format pdb(mol2)
     
