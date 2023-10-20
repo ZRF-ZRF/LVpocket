@@ -24,7 +24,7 @@
     conda install numpy=1.19
     conda install tensorflow-gpu=1.3
     conda install keras=2.2
-    conda install openbabel=2.4
+    conda install openbabel=3.1.1
     conda install -c cheminfIBB tfbio=0.3
     conda install scikit-image=0.17
     conda install scipy=1.5
