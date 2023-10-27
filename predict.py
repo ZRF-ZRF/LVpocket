@@ -9,13 +9,11 @@ import pandas as pd
 import pybel
 from pybel import readfile
 import tensorflow as tf
-from LV_Net import LV_NET
+from LV_former18 import LV_NET
 from tfbio.data import Featurizer
 import keras
 from tqdm import tqdm
 
-root_dir = os.path.dirname(os.path.dirname(__file__))
-model_path = os.path.join(root_dir, 'path', 'modelfile')
 
 os.environ['CUDA_VISIBLE_DEVICES'] = "1"
 
@@ -38,7 +36,7 @@ def parse_args():
 
     parser.add_argument('--input', '-i', required=True, type=input_path, nargs='+',
                         help='paths to protein structures')
-    parser.add_argument('--model', '-m', type=input_path, default=model_path,
+    parser.add_argument('--model', '-m', type=input_path,
                         help='path to the .hdf file with trained model.')
     parser.add_argument('--dirname_pattern', type=str,
                         default='.*{sep}([^{sep}]+){sep}[^{sep}]+$'.format(sep=os.sep),
