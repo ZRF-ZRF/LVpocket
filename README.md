@@ -6,7 +6,7 @@
 
 #  Usage
 
-## 1. Download the model files
+## 1. Download the model files and KV3K data set
 
    Links：https://pan.baidu.com/s/1kOUircaFHDdapegPvhzH3w 
   
