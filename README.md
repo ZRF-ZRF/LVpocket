@@ -32,7 +32,7 @@
 
 ## 4.   Prediction
 
-    python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model all_scPDB_model.hdf --format pdb(mol2)
+    python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model baseline_model.hdf --format pdb(mol2)
     
     --input The filepath of protein for prediction, we can deal with the format of '.pdb' or '.mol2';
     --output The output path of the prediction results;
