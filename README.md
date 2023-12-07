@@ -29,8 +29,21 @@
     conda install scikit-image=0.17
     conda install scipy=1.5
     conda install tqdm
+    conda install biopython
+    
+## 4. Protein structure class prediction
 
-## 4.   Prediction
+      If you want to know which structure class your input protein is, you can use the protein structure class prediction method we built to do so.The usage process of this method is as follows:
+      1、	Install PSIPRED
+      
+      2、	Use the pdb_to_fasta method to convert the PDB format file to FASTA format
+      
+      3、	The PSIPRED tool was used to predict the secondary structure sequence of the protein
+      
+      4、	Extract features based on the secondary structure sequence of the protein and make predictions
+
+
+## 5.   Prediction
 
     python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model baseline_model.hdf --format pdb(mol2)
     
