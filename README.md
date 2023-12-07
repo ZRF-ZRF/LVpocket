@@ -33,13 +33,13 @@
     
 ## 4. Protein structure class prediction
 If you want to know which structure class your input protein is, you can use the protein structure class prediction method we built to do so.The usage process of this method is as follows:
-      1、	Install PSIPRED
-      
-      2、	Use the pdb_to_fasta method to convert the PDB format file to FASTA format
-      
-      3、	The PSIPRED tool was used to predict the secondary structure sequence of the protein
-      
-      4、	Extract features based on the secondary structure sequence of the protein and make predictions
+1、	Install PSIPRED
+
+2、	Use the pdb_to_fasta method to convert the PDB format file to FASTA format
+
+3、	The PSIPRED tool was used to predict the secondary structure sequence of the protein
+
+4、	Extract features based on the secondary structure sequence of the protein and make predictions
 
 
 ## 5.   Prediction
