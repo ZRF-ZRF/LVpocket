@@ -1,0 +1,51 @@
+HETATM    1 FE   HEC A 801      -3.992  14.798   2.133  1.00  7.50          FE  
+HETATM    2  CHA HEC A 801      -4.691  11.896   3.747  1.00 10.82           C  
+HETATM    3  CHB HEC A 801      -6.196  14.006  -0.298  1.00  7.29           C  
+HETATM    4  CHC HEC A 801      -3.503  17.874   0.676  1.00  7.82           C  
+HETATM    5  CHD HEC A 801      -1.449  15.385   4.275  1.00  7.37           C  
+HETATM    6  NA  HEC A 801      -5.176  13.270   1.801  1.00  7.97           N  
+HETATM    7  C1A HEC A 801      -5.382  12.175   2.621  1.00  9.06           C  
+HETATM    8  C2A HEC A 801      -6.371  11.296   2.049  1.00  8.17           C  
+HETATM    9  C3A HEC A 801      -6.767  11.870   0.903  1.00  7.75           C  
+HETATM   10  C4A HEC A 801      -5.999  13.078   0.745  1.00  7.50           C  
+HETATM   11  CMA HEC A 801      -7.819  11.362  -0.082  1.00  8.15           C  
+HETATM   12  CAA HEC A 801      -6.915  10.038   2.681  1.00 11.46           C  
+HETATM   13  CBA HEC A 801      -6.231   8.816   2.503  1.00 16.51           C  
+HETATM   14  CGA HEC A 801      -6.942   7.556   2.912  1.00 22.01           C  
+HETATM   15  O1A HEC A 801      -6.623   6.475   2.371  1.00 24.13           O  
+HETATM   16  O2A HEC A 801      -7.974   7.629   3.556  1.00 21.94           O  
+HETATM   17  NB  HEC A 801      -4.680  15.736   0.519  1.00  7.42           N  
+HETATM   18  C1B HEC A 801      -5.603  15.232  -0.408  1.00  7.59           C  
+HETATM   19  C2B HEC A 801      -5.910  16.228  -1.404  1.00  8.12           C  
+HETATM   20  C3B HEC A 801      -5.178  17.316  -1.142  1.00  7.93           C  
+HETATM   21  C4B HEC A 801      -4.411  17.018   0.064  1.00  7.97           C  
+HETATM   22  CMB HEC A 801      -6.895  16.016  -2.551  1.00  9.88           C  
+HETATM   23  CAB HEC A 801      -5.142  18.629  -1.821  1.00  8.57           C  
+HETATM   24  CBB HEC A 801      -6.425  19.417  -1.807  1.00  9.43           C  
+HETATM   25  NC  HEC A 801      -2.781  16.332   2.444  1.00  7.41           N  
+HETATM   26  C1C HEC A 801      -2.690  17.499   1.749  1.00  7.62           C  
+HETATM   27  C2C HEC A 801      -1.601  18.329   2.193  1.00  7.41           C  
+HETATM   28  C3C HEC A 801      -0.980  17.608   3.184  1.00  7.48           C  
+HETATM   29  C4C HEC A 801      -1.728  16.370   3.332  1.00  7.19           C  
+HETATM   30  CMC HEC A 801      -1.191  19.604   1.539  1.00  8.85           C  
+HETATM   31  CAC HEC A 801       0.259  17.937   3.949  1.00  7.31           C  
+HETATM   32  CBC HEC A 801       0.195  19.177   4.763  1.00  8.31           C  
+HETATM   33  ND  HEC A 801      -3.291  13.860   3.729  1.00  8.63           N  
+HETATM   34  C1DAHEC A 801      -2.098  14.180   4.433  0.67  7.92           C  
+HETATM   35  C1DBHEC A 801      -2.241  14.300   4.517  0.33  8.37           C  
+HETATM   36  C2DAHEC A 801      -1.707  13.102   5.315  0.67  7.12           C  
+HETATM   37  C2DBHEC A 801      -2.187  13.584   5.790  0.33  8.64           C  
+HETATM   38  C3DAHEC A 801      -2.591  12.103   5.197  0.67  7.72           C  
+HETATM   39  C3DBHEC A 801      -3.214  12.683   5.670  0.33  8.96           C  
+HETATM   40  C4DAHEC A 801      -3.571  12.621   4.236  0.67 10.13           C  
+HETATM   41  C4DBHEC A 801      -3.781  12.779   4.351  0.33 10.12           C  
+HETATM   42  CMDAHEC A 801      -0.531  13.133   6.342  0.67  9.85           C  
+HETATM   43  CMDBHEC A 801      -0.945  13.569   6.668  0.33 12.11           C  
+HETATM   44  CADAHEC A 801      -2.583  10.730   5.849  0.67  8.72           C  
+HETATM   45  CADBHEC A 801      -3.426  11.410   6.465  0.33 15.26           C  
+HETATM   46  CBDAHEC A 801      -1.505   9.808   5.464  0.67 11.67           C  
+HETATM   47  CGDAHEC A 801      -1.376   9.269   3.994  0.67 14.13           C  
+HETATM   48  O1DAHEC A 801      -1.689  10.182   3.311  0.67 20.73           O  
+HETATM   49  O2DAHEC A 801      -1.052   8.212   3.771  0.67 15.03           O  
+TER      50      HEC A 801                                                       
+END   

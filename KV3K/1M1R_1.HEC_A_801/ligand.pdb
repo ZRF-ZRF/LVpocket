@@ -1,0 +1,55 @@
+HETATM    1 FE   HEC A 801      -3.956  14.741   2.162  1.00  7.52          FE  
+HETATM    2  CHA HEC A 801      -4.610  11.818   3.753  1.00  9.94           C  
+HETATM    3  CHB HEC A 801      -6.169  13.958  -0.293  1.00  7.83           C  
+HETATM    4  CHC HEC A 801      -3.470  17.777   0.695  1.00  7.79           C  
+HETATM    5  CHD HEC A 801      -1.412  15.332   4.293  1.00  7.43           C  
+HETATM    6  NA  HEC A 801      -5.154  13.200   1.801  1.00  7.74           N  
+HETATM    7  C1A HEC A 801      -5.367  12.113   2.658  1.00  8.82           C  
+HETATM    8  C2A HEC A 801      -6.368  11.255   2.080  1.00  8.56           C  
+HETATM    9  C3A HEC A 801      -6.732  11.816   0.883  1.00  8.25           C  
+HETATM   10  C4A HEC A 801      -5.983  13.040   0.774  1.00  7.35           C  
+HETATM   11  CMA HEC A 801      -7.778  11.328  -0.065  1.00  8.09           C  
+HETATM   12  CAA HEC A 801      -6.888   9.965   2.692  1.00  9.94           C  
+HETATM   13  CBA HEC A 801      -6.209   8.750   2.339  1.00 14.15           C  
+HETATM   14  CGA HEC A 801      -6.871   7.534   2.861  1.00 18.41           C  
+HETATM   15  O1A HEC A 801      -6.546   6.430   2.371  1.00 22.22           O  
+HETATM   16  O2A HEC A 801      -7.987   7.553   3.514  1.00 18.41           O  
+HETATM   17  NB  HEC A 801      -4.634  15.666   0.543  1.00  7.47           N  
+HETATM   18  C1B HEC A 801      -5.591  15.173  -0.355  1.00  7.54           C  
+HETATM   19  C2B HEC A 801      -5.898  16.189  -1.378  1.00  8.45           C  
+HETATM   20  C3B HEC A 801      -5.150  17.269  -1.127  1.00  7.69           C  
+HETATM   21  C4B HEC A 801      -4.383  16.949   0.107  1.00  7.71           C  
+HETATM   22  CMB HEC A 801      -6.881  15.974  -2.490  1.00  9.21           C  
+HETATM   23  CAB HEC A 801      -5.110  18.580  -1.818  1.00  8.51           C  
+HETATM   24  CBB HEC A 801      -6.384  19.372  -1.780  1.00 10.34           C  
+HETATM   25  NC  HEC A 801      -2.730  16.262   2.490  1.00  7.28           N  
+HETATM   26  C1C HEC A 801      -2.654  17.444   1.795  1.00  7.63           C  
+HETATM   27  C2C HEC A 801      -1.530  18.248   2.220  1.00  7.53           C  
+HETATM   28  C3C HEC A 801      -0.925  17.535   3.210  1.00  7.09           C  
+HETATM   29  C4C HEC A 801      -1.676  16.315   3.348  1.00  7.24           C  
+HETATM   30  CMC HEC A 801      -1.122  19.544   1.563  1.00  8.68           C  
+HETATM   31  CAC HEC A 801       0.332  17.862   3.928  1.00  7.81           C  
+HETATM   32  CBC HEC A 801       0.252  19.110   4.795  1.00  8.34           C  
+HETATM   33  ND  HEC A 801      -3.240  13.782   3.744  1.00  8.14           N  
+HETATM   34  C1DAHEC A 801      -2.049  14.112   4.467  0.64  7.94           C  
+HETATM   35  C1DBHEC A 801      -2.156  14.206   4.520  0.36  7.98           C  
+HETATM   36  C2DAHEC A 801      -1.701  13.046   5.358  0.64  7.57           C  
+HETATM   37  C2DBHEC A 801      -2.055  13.388   5.697  0.36  8.81           C  
+HETATM   38  C3DAHEC A 801      -2.556  12.011   5.189  0.64  7.54           C  
+HETATM   39  C3DBHEC A 801      -2.945  12.385   5.549  0.36 10.61           C  
+HETATM   40  C4DAHEC A 801      -3.563  12.547   4.218  0.64  9.32           C  
+HETATM   41  C4DBHEC A 801      -3.610  12.583   4.263  0.36  9.53           C  
+HETATM   42  CMDAHEC A 801      -0.518  13.054   6.382  0.64  7.96           C  
+HETATM   43  CMDBHEC A 801      -0.842  13.516   6.626  0.36 11.06           C  
+HETATM   44  CADAHEC A 801      -2.575  10.695   5.889  0.64  8.17           C  
+HETATM   45  CADBHEC A 801      -2.852  11.055   6.308  0.36 12.93           C  
+HETATM   46  CBDAHEC A 801      -1.460   9.784   5.490  0.64 10.13           C  
+HETATM   47  CBDBHEC A 801      -3.650  11.182   7.460  0.36 19.48           C  
+HETATM   48  CGDAHEC A 801      -1.454   9.206   4.021  0.64 13.34           C  
+HETATM   49  CGDBHEC A 801      -4.591  12.204   7.984  0.36 23.81           C  
+HETATM   50  O1DAHEC A 801      -1.736  10.086   3.232  0.64 22.18           O  
+HETATM   51  O1DBHEC A 801      -5.597  12.415   7.253  0.36 24.92           O  
+HETATM   52  O2DAHEC A 801      -0.984   8.250   3.795  0.64 14.65           O  
+HETATM   53  O2DBHEC A 801      -4.242  12.769   8.946  0.36 23.65           O  
+TER      54      HEC A 801                                                       
+END   
