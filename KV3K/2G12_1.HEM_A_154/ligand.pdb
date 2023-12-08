@@ -1,0 +1,93 @@
+MODEL      1
+HETATM    1  CHAAHEM A 154      37.630   2.546  11.374  0.77 14.71           C  
+HETATM    2  CHBAHEM A 154      36.909   5.387   7.575  0.77 13.82           C  
+HETATM    3  CHCAHEM A 154      32.424   6.214   9.057  0.77 14.49           C  
+HETATM    4  CHDAHEM A 154      33.092   3.234  12.759  0.77 14.85           C  
+HETATM    5  C1AAHEM A 154      37.832   3.273  10.221  0.77 14.56           C  
+HETATM    6  C2AAHEM A 154      39.078   3.295   9.485  0.77 15.16           C  
+HETATM    7  C3AAHEM A 154      38.871   4.082   8.409  0.77 14.42           C  
+HETATM    8  C4AAHEM A 154      37.497   4.542   8.489  0.77 13.73           C  
+HETATM    9  CMAAHEM A 154      39.870   4.381   7.299  0.77 15.47           C  
+HETATM   10  CAAAHEM A 154      40.344   2.498   9.806  0.77 17.88           C  
+HETATM   11  CBAAHEM A 154      40.509   1.250   8.930  0.77 22.83           C  
+HETATM   12  CGAAHEM A 154      39.301   0.313   8.978  0.77 24.13           C  
+HETATM   13  O1AAHEM A 154      38.968  -0.195  10.071  0.77 26.13           O  
+HETATM   14  O2AAHEM A 154      38.684   0.084   7.917  0.77 26.01           O  
+HETATM   15  C1BAHEM A 154      35.610   5.835   7.630  0.77 14.32           C  
+HETATM   16  C2BAHEM A 154      35.026   6.761   6.677  0.77 14.37           C  
+HETATM   17  C3BAHEM A 154      33.760   6.994   7.094  0.77 14.15           C  
+HETATM   18  C4BAHEM A 154      33.575   6.208   8.301  0.77 13.83           C  
+HETATM   19  CMBAHEM A 154      35.707   7.356   5.445  0.77 14.87           C  
+HETATM   20  CABAHEM A 154      32.806   7.790   6.468  0.77 13.52           C  
+HETATM   21  CBBAHEM A 154      33.047   9.184   6.151  0.77 16.21           C  
+HETATM   22  C1CAHEM A 154      32.231   5.496  10.218  0.77 14.12           C  
+HETATM   23  C2CAHEM A 154      31.035   5.576  11.032  0.77 15.37           C  
+HETATM   24  C3CAHEM A 154      31.214   4.720  12.070  0.77 16.91           C  
+HETATM   25  C4CAHEM A 154      32.527   4.135  11.890  0.77 14.96           C  
+HETATM   26  CMCAHEM A 154      29.832   6.485  10.792  0.77 14.23           C  
+HETATM   27  CACAHEM A 154      30.305   4.417  13.085  0.77 18.97           C  
+HETATM   28  CBCAHEM A 154      29.585   5.434  13.826  0.77 19.91           C  
+HETATM   29  C1DAHEM A 154      34.373   2.743  12.667  0.77 15.97           C  
+HETATM   30  C2DAHEM A 154      34.980   1.890  13.659  0.77 16.73           C  
+HETATM   31  C3DAHEM A 154      36.266   1.735  13.297  0.77 16.53           C  
+HETATM   32  C4DAHEM A 154      36.440   2.465  12.061  0.77 14.96           C  
+HETATM   33  CMDAHEM A 154      34.305   1.288  14.887  0.77 17.16           C  
+HETATM   34  CADAHEM A 154      37.349   1.049  14.109  0.77 19.37           C  
+HETATM   35  CBDAHEM A 154      38.093   2.018  15.011  0.77 25.09           C  
+HETATM   36  CGDAHEM A 154      39.150   1.328  15.849  0.77 28.69           C  
+HETATM   37  O1DAHEM A 154      38.784   0.482  16.689  0.77 32.42           O  
+HETATM   38  O2DAHEM A 154      40.345   1.628  15.664  0.77 31.14           O  
+HETATM   39  NA AHEM A 154      36.857   4.032   9.599  0.77 13.70           N  
+HETATM   40  NB AHEM A 154      34.709   5.490   8.620  0.77 14.26           N  
+HETATM   41  NC AHEM A 154      33.155   4.626  10.760  0.77 14.45           N  
+HETATM   42  ND AHEM A 154      35.274   3.092  11.679  0.77 14.54           N  
+HETATM   43 FE  AHEM A 154      34.987   4.286  10.148  0.77 13.55          FE  
+TER      44      HEM A 154                                                       
+ENDMDL
+MODEL      2
+HETATM    1  CHABHEM A 154      37.803   2.584  11.220  0.23 21.35           C  
+HETATM    2  CHBBHEM A 154      37.048   5.404   7.427  0.23 18.35           C  
+HETATM    3  CHCBHEM A 154      32.708   6.471   9.108  0.23 18.71           C  
+HETATM    4  CHDBHEM A 154      33.408   3.574  12.831  0.23 21.31           C  
+HETATM    5  C1ABHEM A 154      37.974   3.259  10.040  0.23 19.89           C  
+HETATM    6  C2ABHEM A 154      39.200   3.242   9.274  0.23 19.83           C  
+HETATM    7  C3ABHEM A 154      38.985   4.009   8.188  0.23 18.88           C  
+HETATM    8  C4ABHEM A 154      37.629   4.517   8.309  0.23 18.73           C  
+HETATM    9  CMABHEM A 154      39.959   4.244   7.037  0.23 19.44           C  
+HETATM   10  CAABHEM A 154      40.468   2.475   9.612  0.23 22.25           C  
+HETATM   11  CBABHEM A 154      40.684   1.276   8.711  0.23 24.29           C  
+HETATM   12  CGABHEM A 154      39.526   0.304   8.758  0.23 25.24           C  
+HETATM   13  O1ABHEM A 154      39.268  -0.273   9.835  0.23 27.55           O  
+HETATM   14  O2ABHEM A 154      38.870   0.119   7.716  0.23 25.80           O  
+HETATM   15  C1BBHEM A 154      35.781   5.920   7.545  0.23 17.60           C  
+HETATM   16  C2BBHEM A 154      35.190   6.855   6.604  0.23 18.74           C  
+HETATM   17  C3BBHEM A 154      33.948   7.130   7.065  0.23 18.39           C  
+HETATM   18  C4BBHEM A 154      33.799   6.380   8.296  0.23 18.50           C  
+HETATM   19  CMBBHEM A 154      35.829   7.400   5.327  0.23 15.96           C  
+HETATM   20  CABBHEM A 154      32.965   7.884   6.429  0.23 19.00           C  
+HETATM   21  CBBBHEM A 154      33.136   9.294   6.148  0.23 19.63           C  
+HETATM   22  C1CBHEM A 154      32.543   5.802  10.282  0.23 19.37           C  
+HETATM   23  C2CBHEM A 154      31.373   5.928  11.104  0.23 21.13           C  
+HETATM   24  C3CBHEM A 154      31.558   5.115  12.162  0.23 21.77           C  
+HETATM   25  C4CBHEM A 154      32.851   4.486  11.966  0.23 19.67           C  
+HETATM   26  CMCBHEM A 154      30.119   6.727  10.769  0.23 23.40           C  
+HETATM   27  CACBHEM A 154      30.645   4.846  13.183  0.23 22.64           C  
+HETATM   28  CBCBHEM A 154      29.853   5.875  13.831  0.23 20.36           C  
+HETATM   29  C1DBHEM A 154      34.643   2.995  12.680  0.23 21.45           C  
+HETATM   30  C2DBHEM A 154      35.260   2.125  13.661  0.23 23.43           C  
+HETATM   31  C3DBHEM A 154      36.520   1.902  13.241  0.23 23.64           C  
+HETATM   32  C4DBHEM A 154      36.655   2.587  11.975  0.23 21.50           C  
+HETATM   33  CMDBHEM A 154      34.615   1.541  14.914  0.23 23.93           C  
+HETATM   34  CADBHEM A 154      37.618   1.186  14.026  0.23 24.97           C  
+HETATM   35  CBDBHEM A 154      38.372   2.111  14.979  0.23 29.49           C  
+HETATM   36  CGDBHEM A 154      39.439   1.392  15.778  0.23 30.67           C  
+HETATM   37  O1DBHEM A 154      39.079   0.515  16.591  0.23 32.52           O  
+HETATM   38  O2DBHEM A 154      40.638   1.700  15.593  0.23 31.19           O  
+HETATM   39  NA BHEM A 154      37.003   4.034   9.442  0.23 18.91           N  
+HETATM   40  NB BHEM A 154      34.909   5.618   8.576  0.23 18.87           N  
+HETATM   41  NC BHEM A 154      33.451   4.914  10.806  0.23 19.16           N  
+HETATM   42  ND BHEM A 154      35.498   3.259  11.633  0.23 20.17           N  
+HETATM   43 FE  BHEM A 154      35.125   4.271   9.990  0.23 18.94          FE  
+TER      44      HEM A 154                                                       
+ENDMDL
+END   
