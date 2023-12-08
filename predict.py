@@ -9,7 +9,7 @@ import pandas as pd
 import pybel
 from pybel import readfile
 import tensorflow as tf
-from LV_former18 import LV_NET
+from model/LV_former import LV_former
 from tfbio.data import Featurizer
 import keras
 from tqdm import tqdm
@@ -67,7 +67,7 @@ def main():
         raise IOError('Cannot create files inside %s (check your permissions).' % args.output)
 
     #load trained model
-    model = LV_NET.load_model(args.model, scale=args.scale, max_dist=args.max_dist,
+    model = LV_former.load_model(args.model, scale=args.scale, max_dist=args.max_dist,
                             featurizer=Featurizer(save_molecule_codes=False))
     if args.verbose:
         progress_bar = tqdm
