@@ -1,0 +1,301 @@
+MODEL      1
+HETATM    1  N   CGU A  32       8.552  -1.737  10.531  1.00  0.00           N  
+HETATM    2  CA  CGU A  32       8.746  -2.841  11.521  1.00  0.00           C  
+HETATM    3  C   CGU A  32       8.303  -4.158  10.888  1.00  0.00           C  
+HETATM    4  O   CGU A  32       8.455  -5.222  11.453  1.00  0.00           O  
+HETATM    5  CB  CGU A  32       7.876  -2.591  12.747  1.00  0.00           C  
+HETATM    6  CG  CGU A  32       8.658  -2.940  14.014  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32       9.869  -2.012  14.141  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32       7.752  -2.765  15.235  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      10.981  -2.509  14.076  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32       9.662  -0.821  14.302  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32       6.555  -2.953  15.090  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32       8.270  -2.447  16.292  1.00  0.00           O  
+HETATM   13  H   CGU A  32       7.899  -1.028  10.709  1.00  0.00           H  
+HETATM   14  HA  CGU A  32       9.785  -2.900  11.811  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32       6.995  -3.219  12.682  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       7.580  -1.553  12.775  1.00  0.00           H  
+HETATM   17  HG  CGU A  32       8.996  -3.965  13.958  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      2
+HETATM    1  N   CGU A  32      11.197   8.867  -6.101  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      11.785  10.089  -6.714  1.00  0.00           C  
+HETATM    3  C   CGU A  32      10.767  11.218  -6.577  1.00  0.00           C  
+HETATM    4  O   CGU A  32      11.093  12.387  -6.636  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      12.069   9.836  -8.196  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      13.534  10.156  -8.497  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      14.257   8.879  -8.926  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      13.609  11.186  -9.627  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      13.942   7.833  -8.382  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      15.112   8.968  -9.790  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      13.631  12.368  -9.324  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      13.645  10.775 -10.775  1.00  0.00           O  
+HETATM   13  H   CGU A  32      11.057   8.062  -6.638  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      12.699  10.353  -6.202  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      11.433  10.469  -8.796  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      11.870   8.800  -8.428  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      14.004  10.556  -7.610  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      3
+HETATM    1  N   CGU A  32       9.757   1.679 -10.412  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      10.281   2.309 -11.648  1.00  0.00           C  
+HETATM    3  C   CGU A  32       9.476   3.588 -11.878  1.00  0.00           C  
+HETATM    4  O   CGU A  32       9.749   4.365 -12.772  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      10.067   1.369 -12.832  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      11.389   1.159 -13.571  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      11.862  -0.282 -13.370  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      11.184   1.422 -15.064  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      12.475  -0.546 -12.349  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      11.601  -1.097 -14.239  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      10.484   2.367 -15.389  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      11.730   0.673 -15.859  1.00  0.00           O  
+HETATM   13  H   CGU A  32       9.138   0.922 -10.470  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      11.330   2.541 -11.536  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32       9.343   1.806 -13.506  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       9.699   0.419 -12.473  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      12.132   1.840 -13.182  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      4
+HETATM    1  N   CGU A  32       9.078   8.585  -6.917  1.00  0.00           N  
+HETATM    2  CA  CGU A  32       9.862   9.832  -6.683  1.00  0.00           C  
+HETATM    3  C   CGU A  32       9.083  10.755  -5.748  1.00  0.00           C  
+HETATM    4  O   CGU A  32       9.499  11.863  -5.472  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      10.044  10.566  -8.005  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      11.534  10.718  -8.318  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      12.234  11.413  -7.150  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      12.155   9.336  -8.534  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      13.328  10.996  -6.808  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      11.664  12.351  -6.618  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      11.416   8.366  -8.516  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      13.361   9.271  -8.715  1.00  0.00           O  
+HETATM   13  H   CGU A  32       8.528   8.505  -7.725  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      10.824   9.594  -6.257  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32       9.588  11.544  -7.924  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       9.561  10.008  -8.794  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      11.654  11.312  -9.213  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      5
+HETATM    1  N   CGU A  32      10.195 -10.952   1.050  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      10.890 -12.262   0.911  1.00  0.00           C  
+HETATM    3  C   CGU A  32      10.324 -12.996  -0.305  1.00  0.00           C  
+HETATM    4  O   CGU A  32      10.978 -13.825  -0.902  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      10.646 -13.106   2.164  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      11.794 -12.902   3.155  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      11.446 -11.760   4.112  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      12.009 -14.189   3.954  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      10.395 -11.828   4.727  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      12.237 -10.837   4.214  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      11.440 -14.299   5.029  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      12.738 -15.044   3.478  1.00  0.00           O  
+HETATM   13  H   CGU A  32       9.865 -10.660   1.925  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      11.949 -12.102   0.780  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      10.592 -14.148   1.887  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       9.715 -12.806   2.622  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      12.697 -12.656   2.615  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      6
+HETATM    1  N   CGU A  32      14.496   1.154   4.824  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      15.753   1.028   5.617  1.00  0.00           C  
+HETATM    3  C   CGU A  32      15.385   0.592   7.034  1.00  0.00           C  
+HETATM    4  O   CGU A  32      16.207   0.113   7.790  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      16.455   2.384   5.688  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      17.669   2.386   4.758  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      18.650   1.296   5.191  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      17.209   2.117   3.324  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      19.739   1.255   4.641  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      18.297   0.522   6.065  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      16.009   2.114   3.099  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      18.062   1.916   2.477  1.00  0.00           O  
+HETATM   13  H   CGU A  32      14.193   2.033   4.515  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      16.405   0.297   5.163  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      16.777   2.564   6.703  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      15.767   3.160   5.386  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      18.157   3.349   4.806  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      7
+HETATM    1  N   CGU A  32      12.457  -6.553  -4.011  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      13.103  -6.968  -5.277  1.00  0.00           C  
+HETATM    3  C   CGU A  32      12.373  -6.221  -6.397  1.00  0.00           C  
+HETATM    4  O   CGU A  32      12.772  -6.235  -7.545  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      12.914  -8.468  -5.483  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      14.252  -9.112  -5.847  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      14.889  -8.347  -7.008  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      15.186  -9.065  -4.635  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      14.184  -8.065  -7.963  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      16.071  -8.057  -6.922  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      15.371  -7.986  -4.096  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      15.698 -10.109  -4.266  1.00  0.00           O  
+HETATM   13  H   CGU A  32      11.731  -7.093  -3.634  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      14.152  -6.712  -5.270  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      12.206  -8.627  -6.286  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      12.533  -8.911  -4.574  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      14.090 -10.139  -6.139  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      8
+HETATM    1  N   CGU A  32      11.445  -3.544   9.513  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      12.533  -4.527   9.775  1.00  0.00           C  
+HETATM    3  C   CGU A  32      11.915  -5.899  10.027  1.00  0.00           C  
+HETATM    4  O   CGU A  32      12.609  -6.865  10.274  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      13.290  -4.120  11.033  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      14.797  -4.187  10.777  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      15.150  -5.532  10.140  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      15.206  -3.054   9.832  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      15.459  -6.452  10.879  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      15.106  -5.619   8.924  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      16.231  -3.190   9.184  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      14.487  -2.069   9.773  1.00  0.00           O  
+HETATM   13  H   CGU A  32      11.178  -2.915  10.215  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      13.208  -4.571   8.935  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      13.027  -4.801  11.833  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      13.013  -3.113  11.309  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      15.325  -4.084  11.714  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      9
+HETATM    1  N   CGU A  32      10.512  -9.563  -4.615  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      11.399  -9.872  -5.772  1.00  0.00           C  
+HETATM    3  C   CGU A  32      10.572  -9.795  -7.052  1.00  0.00           C  
+HETATM    4  O   CGU A  32      11.064 -10.016  -8.140  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      11.922 -11.297  -5.648  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      13.282 -11.405  -6.340  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      14.351 -11.795  -5.317  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      13.213 -12.474  -7.433  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      15.185 -12.622  -5.648  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      14.320 -11.259  -4.222  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      12.327 -13.310  -7.362  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      14.048 -12.437  -8.322  1.00  0.00           O  
+HETATM   13  H   CGU A  32      10.116 -10.294  -4.094  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      12.222  -9.174  -5.812  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      11.220 -11.967  -6.130  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      12.019 -11.559  -4.605  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      13.537 -10.453  -6.781  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      10
+HETATM    1  N   CGU A  32      10.670 -10.150  -4.238  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      11.605 -10.364  -5.377  1.00  0.00           C  
+HETATM    3  C   CGU A  32      10.921  -9.863  -6.647  1.00  0.00           C  
+HETATM    4  O   CGU A  32      11.420 -10.017  -7.745  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      11.857 -11.856  -5.548  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      13.347 -12.106  -5.784  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      13.767 -11.476  -7.113  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      14.155 -11.481  -4.644  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      13.452 -12.048  -8.144  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      14.397 -10.432  -7.079  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      15.328 -11.217  -4.852  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      13.587 -11.280  -3.583  1.00  0.00           O  
+HETATM   13  H   CGU A  32      10.099 -10.887  -3.935  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      12.533  -9.839  -5.212  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      11.290 -12.207  -6.402  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      11.535 -12.378  -4.660  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      13.531 -13.171  -5.817  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      11
+HETATM    1  N   CGU A  32      11.613  -5.224   8.558  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      12.259  -6.290   9.372  1.00  0.00           C  
+HETATM    3  C   CGU A  32      11.348  -7.510   9.370  1.00  0.00           C  
+HETATM    4  O   CGU A  32      11.769  -8.621   9.622  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      12.425  -5.808  10.811  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      13.494  -4.716  10.870  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      12.854  -3.357  10.584  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      14.125  -4.699  12.264  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      12.340  -2.759  11.515  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      12.890  -2.936   9.440  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      13.756  -3.842  13.050  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      14.968  -5.542  12.522  1.00  0.00           O  
+HETATM   13  H   CGU A  32      11.340  -4.382   8.974  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      13.221  -6.544   8.953  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      12.723  -6.639  11.432  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      11.482  -5.416  11.166  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      14.256  -4.917  10.129  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      12
+HETATM    1  N   CGU A  32       7.105  -1.070  12.150  1.00  0.00           N  
+HETATM    2  CA  CGU A  32       7.718  -1.903  13.223  1.00  0.00           C  
+HETATM    3  C   CGU A  32       7.284  -3.355  13.015  1.00  0.00           C  
+HETATM    4  O   CGU A  32       7.831  -4.274  13.590  1.00  0.00           O  
+HETATM    5  CB  CGU A  32       7.211  -1.428  14.585  1.00  0.00           C  
+HETATM    6  CG  CGU A  32       8.392  -1.188  15.526  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32       8.122   0.056  16.374  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32       8.565  -2.400  16.443  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32       7.873  -0.100  17.558  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32       8.167   1.145  15.825  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32       9.274  -2.279  17.428  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32       7.983  -3.431  16.145  1.00  0.00           O  
+HETATM   13  H   CGU A  32       6.466  -0.365  12.385  1.00  0.00           H  
+HETATM   14  HA  CGU A  32       8.794  -1.828  13.181  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32       6.566  -2.186  15.007  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       6.655  -0.511  14.462  1.00  0.00           H  
+HETATM   17  HG  CGU A  32       9.291  -1.039  14.945  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      13
+HETATM    1  N   CGU A  32       9.792  -3.143  10.142  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      10.794  -4.148  10.599  1.00  0.00           C  
+HETATM    3  C   CGU A  32      10.222  -5.545  10.379  1.00  0.00           C  
+HETATM    4  O   CGU A  32      10.856  -6.542  10.660  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      11.049  -3.975  12.092  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      12.548  -3.795  12.338  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      13.289  -5.074  11.944  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      13.063  -2.627  11.492  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      12.999  -5.600  10.882  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      14.134  -5.506  12.711  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      12.394  -1.607  11.456  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      14.116  -2.774  10.894  1.00  0.00           O  
+HETATM   13  H   CGU A  32       9.205  -2.707  10.795  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      11.716  -4.032  10.050  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      10.699  -4.858  12.611  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      10.514  -3.108  12.451  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      12.719  -3.587  13.384  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      14
+HETATM    1  N   CGU A  32       9.005  -2.711  10.971  1.00  0.00           N  
+HETATM    2  CA  CGU A  32       9.148  -3.860  11.910  1.00  0.00           C  
+HETATM    3  C   CGU A  32       8.475  -5.092  11.311  1.00  0.00           C  
+HETATM    4  O   CGU A  32       8.773  -6.211  11.673  1.00  0.00           O  
+HETATM    5  CB  CGU A  32       8.471  -3.514  13.236  1.00  0.00           C  
+HETATM    6  CG  CGU A  32       9.519  -3.461  14.349  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      10.365  -2.196  14.195  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32       8.816  -3.440  15.708  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32       9.992  -1.184  14.767  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      11.371  -2.259  13.507  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32       9.359  -2.844  16.623  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32       7.747  -4.019  15.809  1.00  0.00           O  
+HETATM   13  H   CGU A  32       8.701  -1.843  11.309  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      10.195  -4.064  12.080  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32       7.735  -4.270  13.469  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32       7.986  -2.553  13.149  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      10.157  -4.330  14.284  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+MODEL      15
+HETATM    1  N   CGU A  32      12.670  -4.570   7.933  1.00  0.00           N  
+HETATM    2  CA  CGU A  32      13.378  -5.697   8.595  1.00  0.00           C  
+HETATM    3  C   CGU A  32      12.499  -6.936   8.467  1.00  0.00           C  
+HETATM    4  O   CGU A  32      12.936  -8.053   8.659  1.00  0.00           O  
+HETATM    5  CB  CGU A  32      13.569  -5.385  10.076  1.00  0.00           C  
+HETATM    6  CG  CGU A  32      14.406  -4.114  10.231  1.00  0.00           C  
+HETATM    7  CD1 CGU A  32      13.539  -2.995  10.811  1.00  0.00           C  
+HETATM    8  CD2 CGU A  32      15.579  -4.391  11.174  1.00  0.00           C  
+HETATM    9 OE11 CGU A  32      14.061  -2.210  11.586  1.00  0.00           O  
+HETATM   10 OE12 CGU A  32      12.369  -2.942  10.471  1.00  0.00           O  
+HETATM   11 OE21 CGU A  32      15.934  -5.550  11.321  1.00  0.00           O  
+HETATM   12 OE22 CGU A  32      16.102  -3.441  11.732  1.00  0.00           O  
+HETATM   13  H   CGU A  32      12.358  -3.806   8.461  1.00  0.00           H  
+HETATM   14  HA  CGU A  32      14.334  -5.866   8.122  1.00  0.00           H  
+HETATM   15  HB2 CGU A  32      14.075  -6.210  10.553  1.00  0.00           H  
+HETATM   16  HB3 CGU A  32      12.600  -5.244  10.537  1.00  0.00           H  
+HETATM   17  HG  CGU A  32      14.782  -3.812   9.264  1.00  0.00           H  
+TER      18      CGU A  32                                                       
+ENDMDL
+END   
