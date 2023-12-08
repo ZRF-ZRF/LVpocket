@@ -702,7 +702,7 @@ class LV_NET(Model):
                 kernel_regularizer=l2(1e-4),
                 activation='sigmoid',
                 name='pocket'
-            )(attn)
+            )(concat9)
             print({'outputs': outputs})
         super().__init__(inputs=inputs, outputs=outputs, **kwargs)
         self.data_handle = data_handle
