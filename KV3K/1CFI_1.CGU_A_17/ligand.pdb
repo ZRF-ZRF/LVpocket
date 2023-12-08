@@ -1,0 +1,256 @@
+MODEL      1
+HETATM    1  N   CGU A  17       4.978   2.693   3.921  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.912   2.608   2.465  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.927   3.586   1.862  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.290   4.531   1.150  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.526   1.155   2.052  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.150  -0.021   2.872  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.579  -0.428   2.561  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       4.302  -1.301   2.749  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       6.731  -1.324   1.674  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.559   0.125   3.150  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       3.131  -1.239   2.263  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       4.772  -2.416   3.133  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      2
+HETATM    1  N   CGU A  17       5.216   3.409   3.509  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       5.182   3.477   2.050  1.00  0.00           C  
+HETATM    3  C   CGU A  17       4.075   4.374   1.541  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.308   5.431   0.943  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       5.013   2.042   1.471  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.774   0.883   2.196  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.249   1.069   2.496  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.652  -0.434   1.408  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.757   0.289   3.360  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.931   1.954   1.891  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.272  -0.415   0.196  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.931  -1.538   1.970  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      3
+HETATM    1  N   CGU A  17       4.974   2.341   3.794  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.968   2.346   2.332  1.00  0.00           C  
+HETATM    3  C   CGU A  17       4.020   3.357   1.731  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.422   4.282   1.005  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.602   0.916   1.825  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.243  -0.267   2.619  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.715  -0.185   2.978  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.054  -1.602   1.876  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.413   0.653   2.326  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.212  -0.935   3.874  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.773  -1.604   0.637  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.179  -2.701   2.500  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      4
+HETATM    1  N   CGU A  17       4.901   2.797   3.857  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.894   2.795   2.394  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.915   3.777   1.788  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.285   4.747   1.114  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.560   1.357   1.891  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.276   0.188   2.641  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.793   0.187   2.692  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       4.861  -1.177   2.065  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.382   1.081   2.008  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.425  -0.679   3.373  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.706  -1.313   0.811  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       4.672  -2.165   2.841  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      5
+HETATM    1  N   CGU A  17       4.689   3.122   3.787  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.694   3.036   2.330  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.353   3.365   1.707  1.00  0.00           C  
+HETATM    4  O   CGU A  17       2.935   2.720   0.729  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       5.128   1.608   1.882  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       6.083   0.802   2.816  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.525   1.259   2.941  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       6.127  -0.685   2.410  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       8.301   0.516   3.619  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.913   2.343   2.405  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.104  -1.415   2.594  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       7.173  -1.184   1.892  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      6
+HETATM    1  N   CGU A  17       5.059   2.806   3.718  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       5.105   2.834   2.258  1.00  0.00           C  
+HETATM    3  C   CGU A  17       4.067   3.764   1.670  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.372   4.769   1.014  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.898   1.395   1.704  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.547   0.220   2.504  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.675   0.532   3.471  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       6.085  -0.866   1.556  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       6.831  -0.278   4.436  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.426   1.542   3.299  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.484  -1.114   0.465  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       7.132  -1.516   1.865  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      7
+HETATM    1  N   CGU A  17       4.610   2.927   4.147  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.820   2.822   2.705  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.743   3.476   1.867  1.00  0.00           C  
+HETATM    4  O   CGU A  17       3.886   3.589   0.645  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.917   1.306   2.331  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.713   0.434   3.356  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.215   0.628   3.450  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.490  -1.075   3.126  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.930  -0.418   3.362  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.713   1.787   3.594  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.589  -1.860   4.119  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.213  -1.523   1.971  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      8
+HETATM    1  N   CGU A  17       4.951   2.615   3.516  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.886   2.532   2.056  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.881   3.472   1.438  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.202   4.254   0.527  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.560   1.058   1.658  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.321  -0.030   2.488  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.821   0.120   2.661  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.085  -1.438   1.915  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.376  -0.675   3.482  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.472   1.005   2.025  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.042  -2.441   2.693  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       4.933  -1.596   0.664  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      9
+HETATM    1  N   CGU A  17       4.967   2.903   3.760  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       5.065   3.039   2.306  1.00  0.00           C  
+HETATM    3  C   CGU A  17       4.049   3.999   1.728  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.373   5.103   1.273  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.898   1.637   1.647  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.595   0.454   2.395  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.031   0.631   2.854  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.567  -0.830   1.546  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.359   0.036   3.926  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.851   1.331   2.182  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.859  -0.782   0.311  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.250  -1.937   2.079  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      10
+HETATM    1  N   CGU A  17       4.981   2.760   3.339  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       5.073   2.750   1.881  1.00  0.00           C  
+HETATM    3  C   CGU A  17       4.047   3.664   1.244  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.364   4.589   0.484  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.893   1.302   1.343  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.422   0.126   2.226  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.910   0.061   2.522  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.037  -1.236   1.617  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.331  -0.997   3.085  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.675   1.032   2.232  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.103  -1.920   2.139  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.648  -1.676   0.594  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      11
+HETATM    1  N   CGU A  17       4.876   2.776   4.228  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.877   2.959   2.775  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.720   3.807   2.293  1.00  0.00           C  
+HETATM    4  O   CGU A  17       3.877   5.017   2.034  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.897   1.560   2.087  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       6.060   0.611   2.547  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.490   1.095   2.401  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.986  -0.744   1.822  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.676   2.099   1.647  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       8.443   0.501   2.994  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.976  -1.497   1.990  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       6.929  -1.113   1.056  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      12
+HETATM    1  N   CGU A  17       5.105   2.621   3.303  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       5.041   2.686   1.845  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.962   3.615   1.337  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.240   4.652   0.707  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.819   1.253   1.273  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.700   0.111   1.875  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.081   0.459   2.401  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.904  -1.027   0.857  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.726   1.342   1.756  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.555  -0.126   3.424  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       6.730  -1.959   1.107  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.247  -1.034  -0.230  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      13
+HETATM    1  N   CGU A  17       4.863   2.470   3.440  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.909   2.577   1.983  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.904   3.549   1.403  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.227   4.409   0.575  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.668   1.159   1.374  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.219  -0.054   2.193  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.590   0.072   2.831  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.256  -1.331   1.334  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       6.982  -0.911   3.532  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.304   1.106   2.644  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.373  -2.467   1.889  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.166  -1.247   0.070  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      14
+HETATM    1  N   CGU A  17       4.687   2.356   4.165  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.678   2.109   2.725  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.685   2.945   1.953  1.00  0.00           C  
+HETATM    4  O   CGU A  17       3.947   3.268   0.777  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.408   0.594   2.466  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.297  -0.401   3.279  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.805  -0.235   3.222  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.013  -1.860   2.877  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.490  -1.102   3.849  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.339   0.718   2.574  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.935  -2.176   1.650  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       4.861  -2.746   3.774  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      15
+HETATM    1  N   CGU A  17       4.687   2.818   3.876  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.757   2.615   2.431  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.789   3.472   1.650  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.030   3.785   0.474  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.493   1.111   2.111  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.281   0.066   2.964  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.775   0.263   3.153  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.103  -1.355   2.400  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.373  -0.602   3.864  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.376   1.250   2.625  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       4.252  -2.142   2.920  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.806  -1.740   1.415  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      16
+HETATM    1  N   CGU A  17       4.842   3.071   3.599  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.942   2.873   2.154  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.997   3.767   1.379  1.00  0.00           C  
+HETATM    4  O   CGU A  17       4.352   4.382   0.366  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       4.652   1.384   1.802  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       5.451   0.265   2.543  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       6.909   0.516   2.877  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       5.416  -1.055   1.748  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.484   1.462   2.255  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       7.517  -0.208   3.726  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       5.476  -2.164   2.363  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       5.326  -1.030   0.481  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+MODEL      17
+HETATM    1  N   CGU A  17       4.917   2.636   3.789  1.00  0.00           N  
+HETATM    2  CA  CGU A  17       4.899   2.478   2.337  1.00  0.00           C  
+HETATM    3  C   CGU A  17       3.529   2.716   1.728  1.00  0.00           C  
+HETATM    4  O   CGU A  17       3.160   2.071   0.740  1.00  0.00           O  
+HETATM    5  CB  CGU A  17       5.391   1.057   1.929  1.00  0.00           C  
+HETATM    6  CG  CGU A  17       6.448   0.361   2.840  1.00  0.00           C  
+HETATM    7  CD1 CGU A  17       7.803   1.023   3.012  1.00  0.00           C  
+HETATM    8  CD2 CGU A  17       6.726  -1.077   2.365  1.00  0.00           C  
+HETATM    9 OE11 CGU A  17       7.875   2.254   2.708  1.00  0.00           O  
+HETATM   10 OE12 CGU A  17       8.806   0.361   3.422  1.00  0.00           O  
+HETATM   11 OE21 CGU A  17       6.863  -1.319   1.126  1.00  0.00           O  
+HETATM   12 OE22 CGU A  17       6.816  -2.021   3.211  1.00  0.00           O  
+TER      13      CGU A  17                                                       
+ENDMDL
+END   
