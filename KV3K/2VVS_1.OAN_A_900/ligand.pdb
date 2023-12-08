@@ -1,0 +1,27 @@
+HETATM    1  CAH OAN A 900     -11.044 -11.048   5.014  1.00 38.62           C  
+HETATM    2  CAG OAN A 900     -10.101 -10.662   6.155  1.00 40.88           C  
+HETATM    3  OAN OAN A 900     -10.028  -9.494   6.556  1.00 37.32           O  
+HETATM    4  NAI OAN A 900      -9.390 -11.696   6.629  1.00 41.01           N  
+HETATM    5  CAB OAN A 900      -8.491 -11.639   7.805  1.00 40.14           C  
+HETATM    6  CAC OAN A 900      -9.333 -11.355   9.085  1.00 36.97           C  
+HETATM    7  OAJ OAN A 900      -9.689 -12.570   9.780  1.00 34.53           O  
+HETATM    8  CAD OAN A 900      -8.602 -10.385  10.036  1.00 37.26           C  
+HETATM    9  OAK OAN A 900      -9.391 -10.079  11.169  1.00 35.47           O  
+HETATM   10  CAE OAN A 900      -8.257  -9.081   9.302  1.00 38.26           C  
+HETATM   11  CAF OAN A 900      -7.734  -8.011  10.259  1.00 36.91           C  
+HETATM   12  OAM OAN A 900      -6.394  -8.264  10.625  1.00 40.93           O  
+HETATM   13  OAL OAN A 900      -7.337  -9.363   8.200  1.00 41.61           O  
+HETATM   14  CAA OAN A 900      -7.293 -10.640   7.675  1.00 42.81           C  
+HETATM   15  NAY OAN A 900      -6.104 -11.015   7.165  1.00 46.56           N  
+HETATM   16  OAQ OAN A 900      -5.099 -10.050   7.172  1.00 51.67           O  
+HETATM   17  CAP OAN A 900      -3.864 -10.469   6.748  1.00 52.94           C  
+HETATM   18  OAR OAN A 900      -3.657 -11.635   6.382  1.00 55.94           O  
+HETATM   19  NAO OAN A 900      -2.901  -9.533   6.779  1.00 52.38           N  
+HETATM   20  CAS OAN A 900      -1.649  -9.719   6.348  1.00 51.12           C  
+HETATM   21  CAT OAN A 900      -1.097 -10.999   6.197  1.00 50.72           C  
+HETATM   22  CAU OAN A 900       0.196 -11.149   5.707  1.00 51.70           C  
+HETATM   23  CAV OAN A 900       0.938 -10.006   5.376  1.00 52.68           C  
+HETATM   24  CAW OAN A 900       0.388  -8.722   5.531  1.00 51.87           C  
+HETATM   25  CAX OAN A 900      -0.914  -8.585   6.004  1.00 51.63           C  
+TER      26      OAN A 900                                                       
+END   

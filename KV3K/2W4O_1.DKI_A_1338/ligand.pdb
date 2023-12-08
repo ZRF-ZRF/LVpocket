@@ -1,0 +1,30 @@
+HETATM    1  FAF DKI A1338       3.053   8.193  14.102  1.00 43.54           F  
+HETATM    2  CAU DKI A1338       2.846   9.555  14.042  1.00 38.69           C  
+HETATM    3  CAI DKI A1338       1.769  10.003  13.288  1.00 38.72           C  
+HETATM    4  CAH DKI A1338       1.592  11.365  13.104  1.00 36.64           C  
+HETATM    5  CAJ DKI A1338       2.602  12.188  13.605  1.00 36.57           C  
+HETATM    6  CAV DKI A1338       3.704  11.680  14.239  1.00 37.27           C  
+HETATM    7  FAG DKI A1338       4.618  12.545  14.688  1.00 38.62           F  
+HETATM    8  CAZ DKI A1338       3.963  10.344  14.302  1.00 35.71           C  
+HETATM    9  NAQ DKI A1338       5.028  10.097  15.136  1.00 35.48           N  
+HETATM   10  CAS DKI A1338       5.203   9.034  15.870  1.00 29.15           C  
+HETATM   11  SAE DKI A1338       3.792   8.458  16.689  1.00 38.81           S  
+HETATM   12  NBA DKI A1338       6.234   8.868  16.632  1.00 28.51           N  
+HETATM   13  NAP DKI A1338       7.275   9.320  16.172  1.00 28.30           N  
+HETATM   14  CAT DKI A1338       6.613   7.878  17.448  1.00 25.31           C  
+HETATM   15  NAA DKI A1338       5.772   7.165  18.160  1.00 26.84           N  
+HETATM   16  NAO DKI A1338       7.915   8.003  17.743  1.00 24.03           N  
+HETATM   17  CAX DKI A1338       8.356   8.859  16.840  1.00 29.25           C  
+HETATM   18  NAR DKI A1338       9.610   9.265  16.760  1.00 33.75           N  
+HETATM   19  CAW DKI A1338      10.125  10.263  16.036  1.00 32.70           C  
+HETATM   20  CAL DKI A1338      11.481  10.562  16.176  1.00 35.76           C  
+HETATM   21  CAN DKI A1338      12.063  11.621  15.486  1.00 37.84           C  
+HETATM   22  CAK DKI A1338       9.363  11.063  15.178  1.00 35.51           C  
+HETATM   23  CAM DKI A1338       9.962  12.120  14.473  1.00 36.72           C  
+HETATM   24  CAY DKI A1338      11.321  12.384  14.606  1.00 42.32           C  
+HETATM   25  SBB DKI A1338      12.093  13.741  13.739  1.00 48.71           S  
+HETATM   26  OAC DKI A1338      11.910  15.017  14.522  1.00 48.58           O  
+HETATM   27  OAD DKI A1338      13.572  13.526  13.573  1.00 50.09           O  
+HETATM   28  NAB DKI A1338      11.349  13.971  12.335  1.00 48.06           N  
+TER      29      DKI A1338                                                       
+END   
