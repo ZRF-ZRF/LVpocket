@@ -1,0 +1,177 @@
+MODEL      1
+HETATM    1  N   MSE A 126      22.038  -4.782   3.027  0.06 39.57           N  
+HETATM    2  CA  MSE A 126      21.257  -5.720   3.827  0.06 39.57           C  
+HETATM    3  C   MSE A 126      20.795  -5.124   5.159  0.06 39.65           C  
+HETATM    4  O   MSE A 126      21.546  -4.414   5.844  0.06 39.12           O  
+HETATM    5  CB  MSE A 126      22.043  -7.033   4.080  0.06 37.34           C  
+HETATM    6  CG  MSE A 126      23.183  -6.966   5.124  0.06 37.20           C  
+HETATM    7 SE   MSE A 126      23.823  -8.697   5.805  0.06 36.26          SE  
+HETATM    8  CE  MSE A 126      23.263  -8.492   7.663  0.06 27.76           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      2
+HETATM    1  N   MSE A 126      21.954  -4.871   3.415  0.06 39.61           N  
+HETATM    2  CA  MSE A 126      20.817  -5.520   4.070  0.06 39.00           C  
+HETATM    3  C   MSE A 126      20.411  -4.855   5.375  0.06 39.40           C  
+HETATM    4  O   MSE A 126      21.164  -4.063   5.952  0.06 38.64           O  
+HETATM    5  CB  MSE A 126      21.189  -6.965   4.407  0.06 38.26           C  
+HETATM    6  CG  MSE A 126      22.169  -7.068   5.592  0.06 38.25           C  
+HETATM    7 SE   MSE A 126      23.306  -8.650   5.560  0.06 43.39          SE  
+HETATM    8  CE  MSE A 126      24.433  -8.199   4.031  0.06 38.32           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      3
+HETATM    1  N   MSE A 126      21.608  -4.729   3.456  0.06 37.98           N  
+HETATM    2  CA  MSE A 126      20.535  -5.393   4.197  0.06 36.03           C  
+HETATM    3  C   MSE A 126      20.081  -4.661   5.456  0.06 37.52           C  
+HETATM    4  O   MSE A 126      20.674  -3.666   5.887  0.06 36.21           O  
+HETATM    5  CB  MSE A 126      20.992  -6.793   4.606  0.06 33.61           C  
+HETATM    6  CG  MSE A 126      21.933  -6.785   5.818  0.06 31.49           C  
+HETATM    7 SE   MSE A 126      23.122  -8.321   5.895  0.06 37.45          SE  
+HETATM    8  CE  MSE A 126      24.589  -7.639   4.808  0.06 33.21           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      4
+HETATM    1  N   MSE A 126      21.795  -4.795   3.121  0.06 38.77           N  
+HETATM    2  CA  MSE A 126      20.817  -5.538   3.910  0.06 38.04           C  
+HETATM    3  C   MSE A 126      20.437  -4.853   5.212  0.06 38.31           C  
+HETATM    4  O   MSE A 126      21.167  -4.002   5.738  0.06 37.02           O  
+HETATM    5  CB  MSE A 126      21.363  -6.928   4.262  0.06 37.44           C  
+HETATM    6  CG  MSE A 126      22.126  -6.983   5.603  0.06 36.90           C  
+HETATM    7 SE   MSE A 126      23.361  -8.486   5.750  0.06 42.46          SE  
+HETATM    8  CE  MSE A 126      24.959  -7.635   5.029  0.06 35.83           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      5
+HETATM    1  N   MSE A 126      21.452  -4.605   3.702  0.06 35.41           N  
+HETATM    2  CA  MSE A 126      20.307  -5.229   4.355  0.06 31.69           C  
+HETATM    3  C   MSE A 126      19.761  -4.456   5.565  0.06 33.70           C  
+HETATM    4  O   MSE A 126      20.140  -3.312   5.838  0.06 31.47           O  
+HETATM    5  CB  MSE A 126      20.716  -6.641   4.781  0.06 27.23           C  
+HETATM    6  CG  MSE A 126      21.581  -6.629   6.045  0.06 22.04           C  
+HETATM    7 SE   MSE A 126      23.020  -7.939   6.125  0.06 22.15          SE  
+HETATM    8  CE  MSE A 126      24.364  -7.026   4.975  0.06 21.40           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      6
+HETATM    1  N   MSE A 126      21.785  -4.806   3.352  0.06 39.83           N  
+HETATM    2  CA  MSE A 126      20.745  -5.507   4.105  0.06 39.09           C  
+HETATM    3  C   MSE A 126      20.337  -4.820   5.398  0.06 39.60           C  
+HETATM    4  O   MSE A 126      21.060  -3.975   5.941  0.06 38.52           O  
+HETATM    5  CB  MSE A 126      21.228  -6.913   4.471  0.06 38.80           C  
+HETATM    6  CG  MSE A 126      22.205  -6.936   5.661  0.06 39.14           C  
+HETATM    7 SE   MSE A 126      23.336  -8.518   5.696  0.06 44.59          SE  
+HETATM    8  CE  MSE A 126      24.518  -8.071   4.219  0.06 40.16           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      7
+HETATM    1  N   MSE A 126      21.822  -4.739   3.392  0.06 38.20           N  
+HETATM    2  CA  MSE A 126      20.708  -5.398   4.076  0.06 36.77           C  
+HETATM    3  C   MSE A 126      20.280  -4.706   5.362  0.06 37.80           C  
+HETATM    4  O   MSE A 126      20.938  -3.788   5.863  0.06 36.60           O  
+HETATM    5  CB  MSE A 126      21.106  -6.825   4.449  0.06 34.72           C  
+HETATM    6  CG  MSE A 126      21.941  -6.885   5.740  0.06 32.60           C  
+HETATM    7 SE   MSE A 126      23.155  -8.397   5.832  0.06 38.59          SE  
+HETATM    8  CE  MSE A 126      24.734  -7.577   5.042  0.06 32.76           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      8
+HETATM    1  N   MSE A 126      22.096  -5.038   3.413  0.06 39.77           N  
+HETATM    2  CA  MSE A 126      21.009  -5.685   4.144  0.06 39.44           C  
+HETATM    3  C   MSE A 126      20.596  -4.958   5.406  0.06 39.94           C  
+HETATM    4  O   MSE A 126      21.328  -4.115   5.938  0.06 38.70           O  
+HETATM    5  CB  MSE A 126      21.429  -7.102   4.550  0.06 38.85           C  
+HETATM    6  CG  MSE A 126      22.466  -7.145   5.693  0.06 38.62           C  
+HETATM    7 SE   MSE A 126      23.630  -8.703   5.637  0.06 42.36          SE  
+HETATM    8  CE  MSE A 126      24.680  -8.209   4.081  0.06 38.09           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      9
+HETATM    1  N   MSE A 126      22.089  -4.939   3.287  0.06 39.75           N  
+HETATM    2  CA  MSE A 126      20.988  -5.621   3.968  0.06 39.67           C  
+HETATM    3  C   MSE A 126      20.578  -4.959   5.271  0.06 39.60           C  
+HETATM    4  O   MSE A 126      21.348  -4.205   5.874  0.06 38.71           O  
+HETATM    5  CB  MSE A 126      21.412  -7.053   4.315  0.06 39.43           C  
+HETATM    6  CG  MSE A 126      22.416  -7.125   5.488  0.06 40.35           C  
+HETATM    7 SE   MSE A 126      23.507  -8.735   5.526  0.06 43.58          SE  
+HETATM    8  CE  MSE A 126      24.565  -8.409   3.921  0.06 38.90           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      10
+HETATM    1  N   MSE A 126      21.797  -4.794   3.401  0.06 38.72           N  
+HETATM    2  CA  MSE A 126      20.731  -5.461   4.144  0.06 37.29           C  
+HETATM    3  C   MSE A 126      20.290  -4.743   5.412  0.06 38.52           C  
+HETATM    4  O   MSE A 126      20.929  -3.797   5.889  0.06 37.19           O  
+HETATM    5  CB  MSE A 126      21.185  -6.871   4.535  0.06 35.27           C  
+HETATM    6  CG  MSE A 126      22.059  -6.913   5.800  0.06 33.03           C  
+HETATM    7 SE   MSE A 126      23.314  -8.407   5.850  0.06 39.83          SE  
+HETATM    8  CE  MSE A 126      24.843  -7.560   4.986  0.06 33.14           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      11
+HETATM    1  N   MSE A 126      21.834  -4.892   3.404  0.06 39.17           N  
+HETATM    2  CA  MSE A 126      20.712  -5.517   4.107  0.06 38.41           C  
+HETATM    3  C   MSE A 126      20.305  -4.812   5.392  0.06 39.04           C  
+HETATM    4  O   MSE A 126      21.023  -3.953   5.914  0.06 38.23           O  
+HETATM    5  CB  MSE A 126      21.095  -6.944   4.489  0.06 37.83           C  
+HETATM    6  CG  MSE A 126      22.075  -6.991   5.673  0.06 37.97           C  
+HETATM    7 SE   MSE A 126      23.240  -8.544   5.659  0.06 43.61          SE  
+HETATM    8  CE  MSE A 126      24.417  -8.039   4.194  0.06 39.51           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      12
+HETATM    1  N   MSE A 126      22.166  -4.957   3.225  0.06 39.55           N  
+HETATM    2  CA  MSE A 126      21.128  -5.681   3.957  0.06 39.71           C  
+HETATM    3  C   MSE A 126      20.686  -5.011   5.247  0.06 39.71           C  
+HETATM    4  O   MSE A 126      21.436  -4.247   5.865  0.06 38.57           O  
+HETATM    5  CB  MSE A 126      21.630  -7.085   4.326  0.06 39.36           C  
+HETATM    6  CG  MSE A 126      22.653  -7.109   5.489  0.06 40.21           C  
+HETATM    7 SE   MSE A 126      23.701  -8.742   5.598  0.06 41.84          SE  
+HETATM    8  CE  MSE A 126      24.722  -8.505   3.965  0.06 38.02           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      13
+HETATM    1  N   MSE A 126      21.886  -4.897   3.210  0.07 37.37           N  
+HETATM    2  CA  MSE A 126      20.778  -5.546   3.907  0.07 36.55           C  
+HETATM    3  C   MSE A 126      20.415  -4.861   5.208  0.07 35.98           C  
+HETATM    4  O   MSE A 126      21.221  -4.126   5.795  0.07 35.07           O  
+HETATM    5  CB  MSE A 126      21.173  -6.972   4.281  0.07 36.90           C  
+HETATM    6  CG  MSE A 126      22.035  -7.028   5.560  0.07 37.95           C  
+HETATM    7 SE   MSE A 126      23.250  -8.542   5.625  0.07 44.30          SE  
+HETATM    8  CE  MSE A 126      24.474  -8.017   4.202  0.07 39.53           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      14
+HETATM    1  N   MSE A 126      21.905  -4.780   3.175  0.07 39.32           N  
+HETATM    2  CA  MSE A 126      20.979  -5.603   3.941  0.07 38.84           C  
+HETATM    3  C   MSE A 126      20.583  -4.977   5.261  0.07 38.26           C  
+HETATM    4  O   MSE A 126      21.383  -4.293   5.916  0.07 37.15           O  
+HETATM    5  CB  MSE A 126      21.600  -6.980   4.246  0.07 39.15           C  
+HETATM    6  CG  MSE A 126      22.544  -7.025   5.478  0.07 40.69           C  
+HETATM    7 SE   MSE A 126      23.610  -8.660   5.591  0.07 43.95          SE  
+HETATM    8  CE  MSE A 126      24.744  -8.345   4.043  0.07 38.87           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      15
+HETATM    1  N   MSE A 126      21.995  -5.002   3.298  0.07 37.47           N  
+HETATM    2  CA  MSE A 126      20.844  -5.610   3.971  0.07 36.90           C  
+HETATM    3  C   MSE A 126      20.462  -4.916   5.265  0.07 37.14           C  
+HETATM    4  O   MSE A 126      21.252  -4.156   5.837  0.07 36.53           O  
+HETATM    5  CB  MSE A 126      21.191  -7.052   4.349  0.07 35.50           C  
+HETATM    6  CG  MSE A 126      22.110  -7.136   5.590  0.07 34.76           C  
+HETATM    7 SE   MSE A 126      23.360  -8.647   5.594  0.07 43.69          SE  
+HETATM    8  CE  MSE A 126      24.382  -8.237   3.964  0.07 34.64           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+MODEL      16
+HETATM    1  N   MSE A 126      22.225  -4.921   3.122  0.07 37.47           N  
+HETATM    2  CA  MSE A 126      21.267  -5.716   3.883  0.07 37.38           C  
+HETATM    3  C   MSE A 126      20.827  -5.077   5.187  0.07 37.32           C  
+HETATM    4  O   MSE A 126      21.606  -4.393   5.865  0.07 36.08           O  
+HETATM    5  CB  MSE A 126      21.860  -7.107   4.218  0.07 35.54           C  
+HETATM    6  CG  MSE A 126      22.828  -7.155   5.452  0.07 35.95           C  
+HETATM    7 SE   MSE A 126      23.896  -8.792   5.661  0.07 33.85          SE  
+HETATM    8  CE  MSE A 126      24.834  -8.678   3.970  0.07 31.59           C  
+TER       9      MSE A 126                                                       
+ENDMDL
+END   
