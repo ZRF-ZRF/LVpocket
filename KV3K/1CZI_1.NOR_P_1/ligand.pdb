@@ -1,0 +1,19 @@
+HETATM    1  N   NOR P   1      89.536  19.272  32.813  1.00  0.21           N  
+HETATM    2  CA  NOR P   1      89.102  20.524  33.358  1.00  0.37           C  
+HETATM    3  CB  NOR P   1      88.948  20.524  34.876  1.00  0.55           C  
+HETATM    4  CG  NOR P   1      87.794  19.724  35.423  1.00  0.24           C  
+HETATM    5  CD1 NOR P   1      88.247  18.404  36.025  1.00  0.23           C  
+HETATM    6  CD2 NOR P   1      86.569  19.653  34.521  1.00  0.20           C  
+HETATM    7  CE1 NOR P   1      87.097  17.669  36.738  1.00  0.19           C  
+HETATM    8  CE2 NOR P   1      85.517  19.246  35.581  1.00  0.87           C  
+HETATM    9  CZ  NOR P   1      85.765  17.776  35.988  1.00  0.21           C  
+HETATM   10  CH  NOR P   1      89.849  21.643  32.935  1.00  0.00           C  
+HETATM   11  OH  NOR P   1      91.143  21.661  33.487  1.00  0.18           O  
+HETATM   12  C   NOR P   1      89.905  21.962  31.451  1.00  0.22           C  
+HETATM   13  O1  NOR P   1      88.889  22.029  30.804  1.00  0.32           O  
+HETATM   14  O2  NOR P   1      91.132  22.246  30.880  1.00  0.16           O  
+HETATM   15  CM  NOR P   1      91.127  22.015  29.443  1.00  0.14           C  
+HETATM   16  CM1 NOR P   1      92.582  22.182  28.921  1.00  0.32           C  
+HETATM   17  CM2 NOR P   1      90.588  20.646  29.034  1.00  0.38           C  
+TER      18      NOR P   1                                                       
+END   
