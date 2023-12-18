@@ -31,7 +31,7 @@
     conda install tqdm
     conda install biopython
     
-## 4. Protein structure class prediction
+## 4. The classifier of protein structure
 If you want to know which structure class your input protein is, you can use the protein structure class prediction method we built to do so.The usage process of this method is as follows:
 
 1、	Install PSIPRED
@@ -43,7 +43,7 @@ If you want to know which structure class your input protein is, you can use the
 4、	Extract features based on the secondary structure sequence of the protein and make predictions
 
 
-## 5.   Prediction
+## 5.   The prediction of protein pockets
 
     python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model baseline_model.hdf --format pdb(mol2)
     
