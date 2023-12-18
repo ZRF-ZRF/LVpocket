@@ -6,7 +6,7 @@
 
 #  Usage
 
-## 1. Download the model files and KV3K data set
+## 1. Download the model files and KV3K dataset
 
    Links：https://pan.baidu.com/s/1kOUircaFHDdapegPvhzH3w 
   
@@ -31,8 +31,8 @@
     conda install tqdm
     conda install biopython
     
-## 4. The classifier of protein structure
-If you want to know which structure class your input protein is, you can use the protein structure class prediction method we built to do so.The usage process of this method is as follows:
+## 4. The classification of protein structure
+If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
 
 1、	Install PSIPRED
 
