@@ -4,7 +4,7 @@ import time
 
 import pandas as pd
 from kalasanty.data import DataWrapper
-from kalasanty.net import UNet, dice_loss, dice, ovl
+from model.LV_former import LV_former, dice_loss, dice, ovl
 
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint
@@ -94,9 +94,9 @@ def main():
                        load_data=args.load)
 
     if args.model:
-        model = UNet.load_model(args.model, data_handle=data)
+        model = LV_former.load_model(args.model, data_handle=data)
     else:
-        model = UNet(data_handle=data)
+        model = LV_former(data_handle=data)
         model.compile(optimizer=Adam(lr=1e-6), loss=dice_loss,
                       metrics=[dice, ovl, 'binary_crossentropy'])
 
