@@ -6,7 +6,7 @@
 
 #  Usage
 
-## 1. Download the model files and KV3K dataset
+## 1.  Download the model files and KV3K dataset
 
    Links：https://pan.baidu.com/s/1kOUircaFHDdapegPvhzH3w 
   
@@ -17,7 +17,7 @@
     git clone https://github.com/ZRF-ZRF/LVpocket.git
     cd LVpocket
    
-## 3.   Python environment
+## 3.  Python environment
 
     conda create -n lvpocket python=3.6.13
     conda activate lvpocket
@@ -30,8 +30,21 @@
     conda install scipy=1.5
     conda install tqdm
     conda install biopython
-    
-## 4. The classification of protein structure
+
+## 4.  Data preparation
+We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
+
+    python model/prepare_dataset.py --dataset /path/scpdb_path/ --output scpdb_dataset.hdf 
+## 5.  Model training
+You can training the model use the following code:
+
+    python trian.py --input scpdb_data.hdf --output /path/model.hdf
+
+## 6.  The prediction of protein pockets
+You can choose baseline model or SCOP fine-tuned models to predict protein binding pockets based on the protein sctructure.
+
+### (1). The classification of protein structure
+
 If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
 
 1、	Install PSIPRED
@@ -42,8 +55,7 @@ If you want to know which structure class your input protein is, you can use the
 
 4、	Extract features based on the secondary structure sequence of the protein and make predictions
 
-
-## 5.   The prediction of protein pockets
+### (2).  Protein binding pockets prediction    
 
     python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model baseline_model.hdf --format pdb(mol2)
     
