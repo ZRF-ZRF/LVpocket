@@ -38,7 +38,7 @@ We used scPDB dataset to train our model, you can get the dataset at this link:h
 ## 5.  Model training
 You can training the model use the following code:
 
-    python trian.py --input scpdb_data.hdf --output /path/model.hdf
+    python trian.py --input scpdb_data.hdf --output /output_path/
 
 ## 6.  The prediction of protein pockets
 You can choose baseline model or SCOP fine-tuned models to predict protein binding pockets based on the protein sctructure.
