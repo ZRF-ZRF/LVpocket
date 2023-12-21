@@ -3,12 +3,14 @@ import os
 import time
 
 import pandas as pd
-from kalasanty.data import DataWrapper
+from model.data import DataWrapper
 from model.LV_former import LV_former, dice_loss, dice, ovl
 
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint
 
+import sys
+sys.path.append('..')
 
 def input_path(path):
     """Check if input exists."""
