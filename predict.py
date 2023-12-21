@@ -6,10 +6,10 @@ import time
 
 import numpy as np
 import pandas as pd
-import pybel
-from pybel import readfile
+from openbabel import pybel
+
 import tensorflow as tf
-from model/LV_former import LV_former
+from model.LV_former import LV_former
 from tfbio.data import Featurizer
 import keras
 from tqdm import tqdm
@@ -84,7 +84,7 @@ def main():
             os.makedirs(dirname)
         try:
 
-            mol = next(readfile(args.format, path))
+            mol = next(pybel.readfile(args.format, path))
         except(StopIteration):
             continue
         model.save_pocket_mol2(mol, dirname)
