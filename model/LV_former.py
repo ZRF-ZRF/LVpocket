@@ -222,8 +222,6 @@ class EncoderLayer(Layer):
 
         return Add()([tensor, out2])
 
-
-
 class LV_former(Model):
 
     def identity_block(self, input_tensor, filters, stage, block, layer=None):
