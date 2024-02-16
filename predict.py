@@ -6,7 +6,7 @@ import time
 
 import numpy as np
 import pandas as pd
-from openbabel import pybel
+import pybel
 
 import tensorflow as tf
 from model.LV_former import LV_former
