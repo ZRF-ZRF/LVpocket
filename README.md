@@ -12,48 +12,32 @@
   
    Code：lvlv
 
-## 2.	 Clone this repository
-
+## 2.	 Setup
+####  1.Clone this repository
     git clone https://github.com/ZRF-ZRF/LVpocket.git
     cd LVpocket
-   
-## 3.  Python environment
-
-    conda create -n lvpocket python=3.6.13
+#### 2.Create the environment with all dependencies
+    conda env create -f environment.yml -n lvpocket
     conda activate lvpocket
-    conda install numpy=1.19
-    conda install tensorflow-gpu=1.3
-    conda install keras=2.2
-    conda install openbabel=3.1.1
-    conda install -c cheminfIBB tfbio=0.3
-    conda install scikit-image=0.17
-    conda install scipy=1.5
-    conda install tqdm
-    conda install biopython
-
-## 4.  Data preparation
+## 3.  Data preparation
 We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
 
     python model/prepare_dataset.py --dataset /path/scpdb_path/ --output scpdb_dataset.hdf 
-## 5.  Model training
+## 4.  Model training
 You can training the model use the following code:
 
     python trian.py --input scpdb_data.hdf --output /output_path/
 
-## 6.  The prediction of protein pockets
+## 5.  The prediction of protein pockets
 You can choose baseline model or SCOP fine-tuned models to predict protein binding pockets based on the protein sctructure.
 
 ### (1). The classification of protein structure
 
-If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
-
-1、	Install PSIPRED
-
-2、	Use the pdb_to_fasta method to convert the PDB format file to FASTA format
-
-3、	The PSIPRED tool was used to predict the secondary structure sequence of the protein
-
-4、	Extract features based on the secondary structure sequence of the protein and make predictions
+Additional: If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
+ 1、Install PSIPRED
+ 2、Use the pdb_to_fasta method to convert the PDB format file to FASTA format
+ 3、The PSIPRED tool was used to predict the secondary structure sequence of the protein
+ 4、Extract features based on the secondary structure sequence of the protein and make predictions
 
 ### (2).  Protein binding pockets prediction    
 
