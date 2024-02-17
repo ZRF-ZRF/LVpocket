@@ -18,6 +18,9 @@
 #### 2.Create the environment with all dependencies
     conda env create -f environment.yml -n lvpocket
     conda activate lvpocket
+###  3.Optionally run tests to make sure everything works as expected
+    conda install pytest
+    pytest -v
 ## 3.  Data preparation
 We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
 
