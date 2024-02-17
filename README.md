@@ -7,9 +7,9 @@
 
 ## 1.  Download the model files and KV3K dataset
 
-   Links：https://pan.baidu.com/s/1kOUircaFHDdapegPvhzH3w 
+   The Zenodo doi of model files：10.5281/zenodo.10633690
   
-   Code：lvlv
+   The Zenodo doi of KV3K dataset: 10.5281/zenodo.10633986
 
 ## 2.	 Setup
 ####  1.Clone this repository
@@ -24,11 +24,11 @@
 ## 3.  Data preparation
 We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
 
-    python model/prepare_dataset.py --dataset /path/scpdb_path/ --output scpdb_dataset.hdf 
+    python scripts/prepare_dataset.py --dataset /path/scpdb_path --output scpdb_dataset.hdf --exclude data/scPDB_blacklist.txt data/scPDB_leakage.txt
 ## 4.  Model training
 You can training the model use the following code:
 
-    python trian.py --input scpdb_data.hdf --output /output_path/
+    python scripts/trian.py --input scpdb_data.hdf --output /output_path --test_ids data/test_ids
 
 ## 5.  The prediction of protein pockets
 You can choose baseline model or SCOP fine-tuned models to predict protein binding pockets based on the protein sctructure.
@@ -43,7 +43,7 @@ Additional: If you want to know which structure class your input protein is, you
 
 ### (2).  Protein binding pockets prediction    
 
-    python predict.py --input 1a26_out.pdb(mol2) --output 1a26_pre --model baseline_model.hdf --format pdb(mol2)
+    python predict.py --input data/test_protein.pdb --output prediction_output --model baseline_model.hdf --format pdb
     
     --input The filepath of protein for prediction, we can deal with the format of '.pdb' or '.mol2';
     --output The output path of the prediction results;
