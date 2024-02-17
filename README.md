@@ -43,7 +43,7 @@ Additional: If you want to know which structure class your input protein is, you
 
 ### (2).  Protein binding pockets prediction    
 
-    python predict.py --input data/test_protein.pdb --output prediction_output --model baseline_model.hdf --format pdb
+    python scripts/predict.py --input data/test_protein.pdb --output prediction_output --model baseline_model.hdf --format pdb
     
     --input The filepath of protein for prediction, we can deal with the format of '.pdb' or '.mol2';
     --output The output path of the prediction results;
