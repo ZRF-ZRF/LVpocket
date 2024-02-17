@@ -12,5 +12,6 @@ dependencies:
 - scipy>=1
 - keras>=2.1,<2.3
 - tensorflow>=1.8,<=1.11
+- tensorflow-gpu
 - protobuf=3.6.1
 - tqdm
