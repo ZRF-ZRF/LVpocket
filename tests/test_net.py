@@ -1,4 +1,5 @@
 import os
+import sys
 sys.path.append('.')
 
 import numpy as np
@@ -131,7 +132,7 @@ def test_lvnet_from_layers(box_size, i, o):
 
 @pytest.mark.parametrize('box_size', (36, 144), ids=lambda x: 'box=%s' % x)
 @pytest.mark.parametrize('o', (4, 2), ids=lambda x: 'o=%s' % x)
-def test_ lvnet_with_featurizer(box_size, o):
+def test_lvnet_with_featurizer(box_size, o):
     f = Featurizer()
     i = len(f.FEATURE_NAMES)
 
