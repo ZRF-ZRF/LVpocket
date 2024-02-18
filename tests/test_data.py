@@ -1,4 +1,6 @@
 import os
+sys.path.append('.')
+
 import tempfile
 
 import numpy as np
@@ -8,7 +10,7 @@ from tfbio.data import Featurizer
 
 import pytest
 
-from kalasanty.data import print_progress, prepare_dataset, DataWrapper
+from model.data import print_progress, prepare_dataset, DataWrapper
 
 
 path = os.path.dirname(os.path.abspath(__file__))
