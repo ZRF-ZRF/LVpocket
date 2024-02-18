@@ -5,7 +5,8 @@ import shutil
 import time
 
 import sys
-sys.path.append('.')
+
+sys.path.append(".")
 
 import numpy as np
 import pandas as pd
@@ -126,7 +127,7 @@ def main():
         try:
 
             mol = next(pybel.readfile(args.format, path))
-        except (StopIteration):
+        except StopIteration:
             continue
         model.save_pocket_mol2(mol, dirname)
 
