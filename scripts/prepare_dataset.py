@@ -2,7 +2,8 @@ import argparse
 import os
 
 import sys
-sys.path.append('.')
+
+sys.path.append(".")
 
 from model.data import prepare_dataset
 from tfbio.data import Featurizer
