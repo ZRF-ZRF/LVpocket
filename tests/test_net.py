@@ -1,4 +1,5 @@
 import os
+sys.path.append('.')
 
 import numpy as np
 import h5py
@@ -16,7 +17,7 @@ import pybel
 
 from tfbio.data import Featurizer
 
-from kalasanty.net import dice_np, dice, dice_loss, ovl_np, ovl, ovl_loss, DataWrapper, UNet
+from model.LV_former import dice_np, dice, dice_loss, ovl_np, ovl, ovl_loss, DataWrapper, LV_NET
 
 
 path = os.path.dirname(os.path.realpath(__file__))
@@ -86,14 +87,14 @@ def test_ovl(smoothing):
         assert np.allclose(score_keras, score, 6)
 
 
-def test_unet_from_data_handle(data):
+def test_lvnet_from_data_handle(data):
     with pytest.raises(ValueError, match='you must either provide'):
-        UNet()
+        LV_NET()
 
     with pytest.raises(TypeError, match='data_handle should be a DataWrapper'):
-        UNet(data_handle='10gs')
+        LV_NET(data_handle='10gs')
 
-    model = UNet(data_handle=data)
+    model = LV_NET(data_handle=data)
     assert model.data_handle == data
     assert model.scale == data.scale
     assert model.max_dist == data.max_dist
@@ -106,39 +107,39 @@ def test_unet_from_data_handle(data):
 @pytest.mark.parametrize('box_size', (4, 16), ids=lambda x: 'box=%s' % x)
 @pytest.mark.parametrize('i', (5, 1), ids=lambda x: 'i=%s' % x)
 @pytest.mark.parametrize('o', (2, 1), ids=lambda x: 'o=%s' % x)
-def test_unet_from_layers(box_size, i, o):
+def test_lvnet_from_layers(box_size, i, o):
     inputs = Input([box_size] * 3 + [i])
     conv1 = Convolution3D(filters=3, kernel_size=1, activation='elu',
                           padding='same')(inputs)
     outputs = Convolution3D(filters=o, kernel_size=1, activation='sigmoid',
                             padding='same')(conv1)
 
-    model = UNet(inputs=inputs, outputs=outputs, box_size=box_size,
+    model = LV_NET(inputs=inputs, outputs=outputs, box_size=box_size,
                  input_channels=i, output_channels=o)
     assert hasattr(model, 'data_handle')
     assert model.data_handle is None
 
     with pytest.raises(ValueError, match='input should be 5D'):
-        UNet(inputs=inputs[0], outputs=inputs)
+        LV_NET(inputs=inputs[0], outputs=inputs)
 
     with pytest.raises(ValueError, match='output should be 5D'):
-        UNet(inputs=inputs, outputs=outputs[1])
+        LV_NET(inputs=inputs, outputs=outputs[1])
 
     with pytest.raises(ValueError, match='input and output shapes do not match'):
-        UNet(inputs=inputs, outputs=concatenate([outputs, outputs], 1))
+        LV_NET(inputs=inputs, outputs=concatenate([outputs, outputs], 1))
 
 
 @pytest.mark.parametrize('box_size', (36, 144), ids=lambda x: 'box=%s' % x)
 @pytest.mark.parametrize('o', (4, 2), ids=lambda x: 'o=%s' % x)
-def test_unet_with_featurizer(box_size, o):
+def test_ lvnet_with_featurizer(box_size, o):
     f = Featurizer()
     i = len(f.FEATURE_NAMES)
 
     with pytest.raises(TypeError, match='should be a tfbio.data.Featurize'):
-        UNet(box_size=box_size, input_channels=i, output_channels=o,
+        LV_NET(box_size=box_size, input_channels=i, output_channels=o,
              scale=0.5, featurizer=1)
 
-    model = UNet(box_size=box_size, input_channels=i, output_channels=o,
+    model = LV_NET(box_size=box_size, input_channels=i, output_channels=o,
                  scale=0.5, featurizer=f)
     assert hasattr(model, 'data_handle')
     assert model.data_handle is None
@@ -159,7 +160,7 @@ def test_multiple_inputs_outputs(box_size, i_channels, o_channels):
     outputs = [Convolution3D(filters=o, kernel_size=1, activation='sigmoid',
                              padding='same')(conv1) for o in o_channels]
 
-    model = UNet(inputs=inputs, outputs=outputs, box_size=box_size,
+    model = LV_NET(inputs=inputs, outputs=outputs, box_size=box_size,
                  input_channels=sum(i_channels),
                  output_channels=sum(o_channels))
     assert len(model.inputs) == len(i_channels)
@@ -181,7 +182,7 @@ def test_training(data, loss):
     outputs = Convolution3D(filters=output_channels, kernel_size=1,
                             activation='sigmoid')(inputs)
 
-    model = UNet(inputs=inputs, outputs=outputs)
+    model = LV_NET(inputs=inputs, outputs=outputs)
     model.compile(optimizer=Adam(lr=1e-6), loss=loss,
                   metrics=[dice, dice_loss, ovl, ovl_loss])
     model.fit_generator(train_gen, steps_per_epoch=2,
@@ -212,7 +213,7 @@ def test_load_wrong_args(data, kwargs, err, compiled):
     i = data.x_channels
     o = data.y_channels
 
-    model1 = UNet(box_size=box_size, input_channels=i,
+    model1 = LV_NET(box_size=box_size, input_channels=i,
                   output_channels=o, scale=data.scale,
                   data_handle=data)
     if compiled:
@@ -225,7 +226,7 @@ def test_load_wrong_args(data, kwargs, err, compiled):
         model1.save(f.name)
 
         with pytest.raises(err, match=list(kwargs)[0]):
-            UNet.load_model(f.name, data_handle=data, **kwargs)
+            LV_NET.load_model(f.name, data_handle=data, **kwargs)
 
 
 @pytest.mark.parametrize('kwargs', (
@@ -241,7 +242,7 @@ def test_save_load(data, kwargs, compiled):
     i = data.x_channels
     o = data.y_channels
 
-    model1 = UNet(box_size=box_size, input_channels=i,
+    model1 = LV_NET(box_size=box_size, input_channels=i,
                   output_channels=o, scale=data.scale,
                   data_handle=data)
     if compiled:
@@ -254,7 +255,7 @@ def test_save_load(data, kwargs, compiled):
 
         model1.save(f.name)
 
-        model2 = UNet.load_model(f.name, data_handle=data, **kwargs)
+        model2 = LV_NET.load_model(f.name, data_handle=data, **kwargs)
         weights2 = model2.get_weights()
 
         assert model1.to_json() == model2.to_json()
@@ -284,7 +285,7 @@ def test_save_load(data, kwargs, compiled):
         'inputs, no outputs', 'outputs, no inputs'))
 def test_incompatible_with_data_handle(data, kwargs):
     with pytest.raises(ValueError, match=list(kwargs)[0]):
-        UNet(data_handle=data, **kwargs)
+        LV_NET(data_handle=data, **kwargs)
 
 
 @pytest.mark.parametrize('input_shape, strides, message', (
@@ -301,7 +302,7 @@ def test_incompatible_layers_shapes(input_shape, strides, message):
                                 padding='same', strides=strides)(inputs)
 
     with pytest.raises(ValueError, match=message):
-        UNet(inputs=inputs, outputs=outputs, box_size=20)
+        LV_NET(inputs=inputs, outputs=outputs, box_size=20)
 
 
 @pytest.mark.parametrize('kwargs', (
@@ -317,19 +318,19 @@ def test_incompatible_with_layers(kwargs):
     outputs = Convolution3D(filters=5, kernel_size=1, activation='sigmoid',
                             padding='same')(conv1)
     with pytest.raises(ValueError, match=list(kwargs)[0]):
-        UNet(inputs=inputs, outputs=outputs, **kwargs)
+        LV_NET(inputs=inputs, outputs=outputs, **kwargs)
 
 
 def test_get_pockets_segmentation(data):
     with pytest.raises(ValueError, match='data_handle must be set'):
-        model = UNet(box_size=data.box_size,
+        model = LV_NET(box_size=data.box_size,
                      input_channels=data.x_channels,
                      output_channels=data.y_channels,
                      l2_lambda=1e-7)
         model.pocket_density_from_grid('10gs')
 
     with pytest.raises(ValueError, match='scale must be set'):
-        model = UNet(box_size=data.box_size,
+        model = LV_NET(box_size=data.box_size,
                      input_channels=data.x_channels,
                      output_channels=data.y_channels,
                      l2_lambda=1e-7, data_handle=data)
@@ -337,7 +338,7 @@ def test_get_pockets_segmentation(data):
         model.pocket_density_from_grid('10gs')
 
     np.random.seed(42)
-    model = UNet(box_size=data.box_size,
+    model = LV_NET(box_size=data.box_size,
                  input_channels=data.x_channels,
                  output_channels=data.y_channels,
                  l2_lambda=1e-7, data_handle=data)
@@ -354,7 +355,7 @@ def test_get_pockets_segmentation(data):
 
 
 def test_save_pockets_cmap(data):
-    model = UNet(data_handle=data, l2_lambda=1e-7)
+    model = LV_NET(data_handle=data, l2_lambda=1e-7)
     model.compile(optimizer=Adam(lr=1e-6), loss='binary_crossentropy')
     density, origin, step = model.pocket_density_from_grid('10gs')
 
@@ -379,7 +380,7 @@ def test_save_pockets_cmap(data):
 
 
 def test_save_pockets_cube(data):
-    model = UNet(data_handle=data, l2_lambda=1e-7)
+    model = LV_NET(data_handle=data, l2_lambda=1e-7)
     model.compile(optimizer=Adam(lr=1e-6), loss='binary_crossentropy')
     density, origin, step = model.pocket_density_from_grid('10gs')
 
@@ -407,16 +408,16 @@ def test_save_pockets_cube(data):
 def test_predict_mol(box_size, o):
     mol = next(pybel.readfile('mol2', protein_file))
     with pytest.raises(ValueError, match='featurizer must be set'):
-        model = UNet(box_size=box_size, scale=0.5, input_channels=num_features,
+        model = LV_NET(box_size=box_size, scale=0.5, input_channels=num_features,
                      output_channels=o)
         model.pocket_density_from_mol(mol)
 
     with pytest.raises(ValueError, match='scale must be set'):
-        model = UNet(featurizer=featurizer, box_size=box_size,
+        model = LV_NET(featurizer=featurizer, box_size=box_size,
                      input_channels=num_features, output_channels=o)
         model.pocket_density_from_mol(mol)
 
-    model = UNet(featurizer=featurizer, box_size=box_size, scale=0.5,
+    model = LV_NET(featurizer=featurizer, box_size=box_size, scale=0.5,
                  output_channels=o)
     model.compile(optimizer=Adam(lr=1e-6), loss='binary_crossentropy')
 
@@ -433,7 +434,7 @@ def test_predict_pocket_atoms(box_size, o):
     np.random.seed(42)
     mol = next(pybel.readfile('mol2', protein_file))
 
-    model = UNet(featurizer=featurizer, box_size=box_size, scale=0.5,
+    model = LV_NET(featurizer=featurizer, box_size=box_size, scale=0.5,
                  output_channels=o)
     model.compile(optimizer=Adam(lr=1e-6), loss='binary_crossentropy')
 
