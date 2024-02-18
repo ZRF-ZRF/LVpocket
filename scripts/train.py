@@ -3,7 +3,8 @@ import os
 import time
 
 import sys
-sys.path.append('.')
+
+sys.path.append(".")
 
 
 import pandas as pd
@@ -12,7 +13,9 @@ from model.LV_former import LV_NET, dice_loss, dice, ovl
 
 from keras.optimizers import Adam
 from keras.callbacks import ModelCheckpoint
-os.environ['CUDA_VISIBLE_DEVICES'] = "0"
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+
 
 def input_path(path):
     """Check if input exists."""
