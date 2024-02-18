@@ -5,7 +5,8 @@ import pybel
 import openbabel
 
 import sys
-sys.path.append('.')
+
+sys.path.append(".")
 
 import tfbio.net
 import tfbio.data
@@ -37,7 +38,7 @@ from keras.models import Model
 from keras import backend as K
 from keras.regularizers import l2
 import tensorflow as tf
-from model.data  import DataWrapper, get_box_size
+from model.data import DataWrapper, get_box_size
 
 
 __all__ = [
@@ -317,7 +318,7 @@ class PositionEncoding(Layer):
     def call(self, inputs):
         seq_length = inputs.shape[1]
         model_dim = int(inputs.shape[-1])
-        
+
         position_encodings = np.zeros((seq_length, seq_length, seq_length, model_dim))
         for pos1 in range(seq_length):
             for pos2 in range(seq_length):
@@ -376,10 +377,10 @@ class EncoderLayer(Layer):
 class LV_NET(Model):
     def identity_block(self, input_tensor, filters, stage, block, layer=None):
         filter1, filter2, filter3 = filters
-        if K.image_data_format() == "channels_last":  
+        if K.image_data_format() == "channels_last":
             bn_axis = 4
         else:
-            bn_axis = 1  
+            bn_axis = 1
         conv_name_base = "res" + str(stage) + block + "_branch"
         bn_name_base = "bn" + str(stage) + block + "_branch"
         x = Convolution3D(
@@ -408,7 +409,7 @@ class LV_NET(Model):
             name=conv_name_base + "2c",
             kernel_regularizer=l2(1e-4),
         )(x)
-        
+
         if layer == None:
             x = BatchNormalization(axis=bn_axis, name=bn_name_base + "2c")(x)
         x = Add()([x, input_tensor])
@@ -723,7 +724,7 @@ class LV_NET(Model):
                 activation="sigmoid",
                 name="pocket",
             )(concat9)
-           
+
         super().__init__(inputs=inputs, outputs=outputs, **kwargs)
         self.data_handle = data_handle
         self.featurizer = featurizer
