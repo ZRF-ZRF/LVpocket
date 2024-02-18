@@ -16,9 +16,9 @@ from skimage.draw import ellipsoid
 
 
 __all__ = [
-    'print_progress',
-    'prepare_dataset',
-    'DataWrapper',
+    "print_progress",
+    "prepare_dataset",
+    "DataWrapper",
 ]
 
 
@@ -39,17 +39,21 @@ def print_progress(iterable, num_steps=10):
     for num, i in enumerate(iterable):
         yield i
         if num % num_steps == 0:
-            print('%s elements processed' % num)
+            print("%s elements processed" % num)
 
 
 def _pdbbind_paths(data_path, idx):
-    return ('%s/%s/%s_ligand.mol2' % (data_path, idx, idx),
-            '%s/%s/%s_protein.mol2' % (data_path, idx, idx))
+    return (
+        "%s/%s/%s_ligand.mol2" % (data_path, idx, idx),
+        "%s/%s/%s_protein.mol2" % (data_path, idx, idx),
+    )
 
 
 def _scpdb_paths(data_path, idx):
-    return ('%s/%s/cavity6.mol2' % (data_path, idx),
-            '%s/%s/protein.mol2' % (data_path, idx))
+    return (
+        "%s/%s/cavity6.mol2" % (data_path, idx),
+        "%s/%s/protein.mol2" % (data_path, idx),
+    )
 
 
 def _get_binary_features(mol):
@@ -62,9 +66,17 @@ def _get_binary_features(mol):
     return coords, features
 
 
-def prepare_dataset(data_path, protein_featurizer, pocket_featurizer=None,
-                    ids=None, hdf_path='pockets.hdf', hdf_mode='w',
-                    progress_bar=None, db_format='scpdb', verbose=False):
+def prepare_dataset(
+    data_path,
+    protein_featurizer,
+    pocket_featurizer=None,
+    ids=None,
+    hdf_path="pockets.hdf",
+    hdf_mode="w",
+    progress_bar=None,
+    db_format="scpdb",
+    verbose=False,
+):
     """Compute features for proteins and pockets and save results in HDF file.
 
     Parameters
@@ -126,10 +138,10 @@ def prepare_dataset(data_path, protein_featurizer, pocket_featurizer=None,
     if progress_bar is None:
         progress_bar = iter
 
-    if db_format == 'scpdb':
+    if db_format == "scpdb":
         get_paths = _scpdb_paths
-        get_id = lambda structure_id: re.sub('_[0-9]+$', '', structure_id)
-    elif db_format == 'pdbbind':
+        get_id = lambda structure_id: re.sub("_[0-9]+$", "", structure_id)
+    elif db_format == "pdbbind":
         get_paths = _pdbbind_paths
         get_id = lambda structure_id: structure_id
     else:
@@ -146,8 +158,8 @@ def prepare_dataset(data_path, protein_featurizer, pocket_featurizer=None,
     with h5py.File(hdf_path, mode=hdf_mode) as f:
         for structure_id in progress_bar(ids):
             pocket_path, protein_path = get_paths(data_path, structure_id)
-            pocket = next(pybel.readfile('mol2', pocket_path))
-            protein = next(pybel.readfile('mol2', protein_path))
+            pocket = next(pybel.readfile("mol2", pocket_path))
+            protein = next(pybel.readfile("mol2", protein_path))
 
             pocket_coords, pocket_features = featurize_pocket(pocket)
             prot_coords, prot_features = protein_featurizer.get_features(protein)
@@ -159,39 +171,58 @@ def prepare_dataset(data_path, protein_featurizer, pocket_featurizer=None,
             group_id = get_id(structure_id)
             if group_id in f:
                 group = f[group_id]
-                if not np.allclose(centroid, group['centroid'][:], atol=0.5):
-                    warn('Structures for %s are not aligned, ignoring pocket %s' % (group_id, structure_id))
+                if not np.allclose(centroid, group["centroid"][:], atol=0.5):
+                    warn(
+                        "Structures for %s are not aligned, ignoring pocket %s"
+                        % (group_id, structure_id)
+                    )
                     continue
 
                 # another pockets from same structure - extend pockets' data
                 multiple_pockets[group_id] = multiple_pockets.get(group_id, 1) + 1
 
-                for key, data in (('pocket_coords', pocket_coords),
-                                  ('pocket_features', pocket_features)):
+                for key, data in (
+                    ("pocket_coords", pocket_coords),
+                    ("pocket_features", pocket_features),
+                ):
                     data = np.concatenate((group[key][:], data))
                     del group[key]
-                    group.create_dataset(key, data=data, shape=data.shape, dtype='float32', compression='lzf')
+                    group.create_dataset(
+                        key,
+                        data=data,
+                        shape=data.shape,
+                        dtype="float32",
+                        compression="lzf",
+                    )
             else:
                 # first pocket for the structure - create all datasets
                 group = f.create_group(group_id)
-                for key, data in (('coords', prot_coords),
-                                  ('features', prot_features),
-                                  ('pocket_coords', pocket_coords),
-                                  ('pocket_features', pocket_features),
-                                  ('centroid', centroid)):
-                    group.create_dataset(key, data=data, shape=data.shape, dtype='float32', compression='lzf')
+                for key, data in (
+                    ("coords", prot_coords),
+                    ("features", prot_features),
+                    ("pocket_coords", pocket_coords),
+                    ("pocket_features", pocket_features),
+                    ("centroid", centroid),
+                ):
+                    group.create_dataset(
+                        key,
+                        data=data,
+                        shape=data.shape,
+                        dtype="float32",
+                        compression="lzf",
+                    )
 
     if verbose and len(multiple_pockets) > 0:
-        print('Found multiple pockets for:')
+        print("Found multiple pockets for:")
         for idx, num in multiple_pockets.items():
-            print('{idx} ({num})'.format(idx=idx, num=num))
+            print("{idx} ({num})".format(idx=idx, num=num))
 
 
 def get_box_size(scale, max_dist):
     return int(np.ceil(2 * max_dist * scale + 1))
 
 
-class DataWrapper():
+class DataWrapper:
     """Wraps dataset saved in HDF file.
 
     Attributes
@@ -215,8 +246,17 @@ class DataWrapper():
         Number of features describing the pocket
     """
 
-    def __init__(self, hdf_path, pdbids=None, test_set=None, load_data=False,
-                 max_dist=35, scale=0.5, footprint=None, max_translation=5):
+    def __init__(
+        self,
+        hdf_path,
+        pdbids=None,
+        test_set=None,
+        load_data=False,
+        max_dist=35,
+        scale=0.5,
+        footprint=None,
+        max_translation=5,
+    ):
         """Creates the wrapper
 
         Parameters
@@ -247,8 +287,13 @@ class DataWrapper():
 
         self.hdf_path = os.path.abspath(hdf_path)
 
-        self.keys = ('coords', 'features', 'centroid',
-                     'pocket_coords', 'pocket_features')
+        self.keys = (
+            "coords",
+            "features",
+            "centroid",
+            "pocket_coords",
+            "pocket_features",
+        )
         self.load_data = load_data
         self.pdbids = pdbids
         self.data_handle = None
@@ -259,20 +304,24 @@ class DataWrapper():
                 self.test_set = test_set
             elif isinstance(test_set, float):
                 if not (0 < test_set < 1):
-                    raise ValueError('test_set should be between 0 and 1 '
-                                     '(exclusive), got %s instead' % test_set)
+                    raise ValueError(
+                        "test_set should be between 0 and 1 "
+                        "(exclusive), got %s instead" % test_set
+                    )
                 num_test = int(len(self.pdbids) * test_set)
                 self.test_set = sample(self.pdbids, num_test)
             else:
-                raise TypeError('test_set can be either specified with list of'
-                                ' IDs or a fraction of the data (float between'
-                                ' 0 and 1, exclusive), got %s instead'
-                                % type(test_set))
+                raise TypeError(
+                    "test_set can be either specified with list of"
+                    " IDs or a fraction of the data (float between"
+                    " 0 and 1, exclusive), got %s instead" % type(test_set)
+                )
         else:
             self.test_set = []
         # TODO optimize
-        self.training_set = [pdbid for pdbid in self.pdbids
-                             if pdbid not in self.test_set]
+        self.training_set = [
+            pdbid for pdbid in self.pdbids if pdbid not in self.test_set
+        ]
 
         self.max_translation = max_translation
         self.max_dist = max_dist
@@ -284,30 +333,35 @@ class DataWrapper():
                 if footprint == 0:
                     footprint = np.ones([1] * 5)
                 elif footprint < 0:
-                    raise ValueError('footprint cannot be negative')
+                    raise ValueError("footprint cannot be negative")
                 elif (2 * footprint + 3) > self.box_size:
-                    raise ValueError('footprint cannot be bigger than box')
+                    raise ValueError("footprint cannot be bigger than box")
                 else:
                     footprint = ellipsoid(footprint, footprint, footprint)
                     footprint = footprint.reshape((1, *footprint.shape, 1))
             elif isinstance(footprint, np.ndarray):
-                if not ((footprint.ndim == 5) and (len(footprint) == 1)
-                        and (footprint.shape[-1] == 1)):
-                    raise ValueError('footprint shape should be '
-                                     '(1, N, M, L, 1), got %s instead'
-                                     % str(footprint.shape))
+                if not (
+                    (footprint.ndim == 5)
+                    and (len(footprint) == 1)
+                    and (footprint.shape[-1] == 1)
+                ):
+                    raise ValueError(
+                        "footprint shape should be "
+                        "(1, N, M, L, 1), got %s instead" % str(footprint.shape)
+                    )
             else:
-                raise TypeError('footprint should be either int or np.ndarray '
-                                'of shape (1, N, M, L, 1), got %s instead'
-                                % type(footprint))
+                raise TypeError(
+                    "footprint should be either int or np.ndarray "
+                    "of shape (1, N, M, L, 1), got %s instead" % type(footprint)
+                )
             self.footprint = footprint
         else:
             footprint = ellipsoid(2, 2, 2)
             self.footprint = footprint.reshape((1, *footprint.shape, 1))
 
         pdbid = self.pdbids[0]
-        self.x_channels = self.data_handle[pdbid]['features'].shape[1]
-        self.y_channels = self.data_handle[pdbid]['pocket_features'].shape[1]
+        self.x_channels = self.data_handle[pdbid]["features"].shape[1]
+        self.y_channels = self.data_handle[pdbid]["pocket_features"].shape[1]
 
     def __enter__(self):
         self._open_data_handle()
@@ -317,14 +371,14 @@ class DataWrapper():
         self.close()
 
     def _open_data_handle(self):
-        if hasattr(self, 'closed') and not self.closed:
+        if hasattr(self, "closed") and not self.closed:
             # it's open
             return
 
         if self.load_data:
             if self.data_handle is None:
                 self.data_handle = {}
-                with h5py.File(self.hdf_path, mode='r') as f:
+                with h5py.File(self.hdf_path, mode="r") as f:
                     if self.pdbids is None:
                         self.pdbids = list(f.keys())
                     for pid in self.pdbids:
@@ -332,7 +386,7 @@ class DataWrapper():
                         for key in self.keys:
                             self.data_handle[pid][key] = f[pid][key][:]
         else:
-            self.data_handle = h5py.File(self.hdf_path, mode='r')
+            self.data_handle = h5py.File(self.hdf_path, mode="r")
             if self.pdbids is None:
                 self.pdbids = list(self.data_handle.keys())
         self.closed = False
@@ -342,8 +396,7 @@ class DataWrapper():
             self.data_handle.close()
         self.closed = True
 
-    def prepare_complex(self, pdbid, rotation=0, translation=(0, 0, 0),
-                        vmin=0, vmax=1):
+    def prepare_complex(self, pdbid, rotation=0, translation=(0, 0, 0), vmin=0, vmax=1):
         """Prepare complex with given pdbid.
 
         Parameters
@@ -366,67 +419,71 @@ class DataWrapper():
             Grid representing pocket
         """
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
+            raise RuntimeError("Trying to use closed DataWrapper")
 
-        resolution = 1. / self.scale
+        resolution = 1.0 / self.scale
         structure = self.data_handle[pdbid]
-        rec_coords = tfbio.data.rotate(structure['coords'][:], rotation)
+        rec_coords = tfbio.data.rotate(structure["coords"][:], rotation)
         rec_coords += translation
-        rec_grid = tfbio.data.make_grid(rec_coords, structure['features'][:],
-                                        max_dist=self.max_dist,
-                                        grid_resolution=resolution)
+        rec_grid = tfbio.data.make_grid(
+            rec_coords,
+            structure["features"][:],
+            max_dist=self.max_dist,
+            grid_resolution=resolution,
+        )
 
-        pocket_coords = tfbio.data.rotate(structure['pocket_coords'][:],
-                                          rotation)
+        pocket_coords = tfbio.data.rotate(structure["pocket_coords"][:], rotation)
         pocket_coords += translation
-        pocket_dens = tfbio.data.make_grid(pocket_coords,
-                                           structure['pocket_features'][:],
-                                           max_dist=self.max_dist)
-        margin = ndimage.maximum_filter(pocket_dens,
-                                        footprint=self.footprint)
+        pocket_dens = tfbio.data.make_grid(
+            pocket_coords, structure["pocket_features"][:], max_dist=self.max_dist
+        )
+        margin = ndimage.maximum_filter(pocket_dens, footprint=self.footprint)
         pocket_dens += margin
         pocket_dens = pocket_dens.clip(vmin, vmax)
 
         zoom = rec_grid.shape[1] / pocket_dens.shape[1]
-        pocket_dens = np.stack([ndimage.zoom(pocket_dens[0, ..., i],
-                                             zoom)
-                                for i in range(self.y_channels)], -1)
+        pocket_dens = np.stack(
+            [
+                ndimage.zoom(pocket_dens[0, ..., i], zoom)
+                for i in range(self.y_channels)
+            ],
+            -1,
+        )
         pocket_dens = np.expand_dims(pocket_dens, 0)
 
         return rec_grid, pocket_dens
 
     def __getitem__(self, pdbid):
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
+            raise RuntimeError("Trying to use closed DataWrapper")
         return self.data_handle[pdbid]
 
     def __contains__(self, pdbid):
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
-        return (str(pdbid) in self.data_handle)
+            raise RuntimeError("Trying to use closed DataWrapper")
+        return str(pdbid) in self.data_handle
 
     def __iter__(self):
         return iter(self.pdbids)
 
     def __len__(self):
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
+            raise RuntimeError("Trying to use closed DataWrapper")
         return len(self.data_handle)
 
-    def sample_generator(self, subset='training', transform=True,
-                         random_order=True):
+    def sample_generator(self, subset="training", transform=True, random_order=True):
         """Yields samples from a given subset ('training', 'test' or 'all').
         By default complexes are randomly transformed (rotated and translated)
         and randomly ordered."""
 
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
+            raise RuntimeError("Trying to use closed DataWrapper")
 
-        if subset == 'training':
+        if subset == "training":
             pdbids = self.training_set[:]
-        elif subset == 'test':
+        elif subset == "test":
             pdbids = self.test_set[:]
-        elif subset == 'all':
+        elif subset == "all":
             pdbids = self.pdbids[:]
 
         while True:
@@ -448,7 +505,7 @@ class DataWrapper():
         """
 
         if self.closed:
-            raise RuntimeError('Trying to use closed DataWrapper')
+            raise RuntimeError("Trying to use closed DataWrapper")
 
         examples = self.sample_generator(**kwargs)
         while True:
@@ -459,4 +516,3 @@ class DataWrapper():
                 receptors.append(receptor)
                 pockets.append(pocket)
             yield np.vstack(receptors), np.vstack(pockets)
-
