@@ -11,7 +11,7 @@
   
    The Zenodo doi of KV3K dataset: [10.5281/zenodo.10633986](https://doi.org/10.5281/zenodo.10633690)
 
-## 2.	 Setup
+## 2.	 Installation
 ####  1.Clone this repository
     git clone https://github.com/ZRF-ZRF/LVpocket.git
     cd LVpocket
