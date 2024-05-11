@@ -22,7 +22,8 @@ In addition, we have developed a protein structure classifier(SCOP classifier) t
 ###  3.Optionally run tests to make sure everything works as expected
     conda install pytest
     pytest -v
-    
+###  4.Pip install
+    pip install lvpocket
 ## 3.  Data preparation
 We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
 
