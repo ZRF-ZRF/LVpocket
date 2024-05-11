@@ -7,9 +7,9 @@
 
 ## 1.  Download the model files and KV3K dataset
 
-   The Zenodo doi of KV3K dataset：[https://zenodo.org/records/10633690](https://zenodo.org/records/10633690)
+   The Zenodo doi of KV3K dataset：[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10633986.svg)](https://doi.org/10.5281/zenodo.10633986)
   
-   The Zenodo doi of model files: [https://doi.org/10.5281/zenodo.10633690](https://zenodo.org/records/10633986)
+   The Zenodo doi of model files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10633690.svg)](https://doi.org/10.5281/zenodo.10633690)
 
 ## 2.	 Installation
 ####  1.Clone this repository
