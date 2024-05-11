@@ -40,14 +40,18 @@ You can choose baseline model or SCOP fine-tuned models to predict protein bindi
 
 #### Additional: If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
    ##### ①Install PSIPRED. The download address: http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/
-   ##### ②Use the pdb_to_fasta method to convert the PDB format file to FASTA format
-         python pdb_to_fasta.py --pdb_file=path/your.pdb --fasta_file=path/you.fasta
+   ##### ②Use the pdb_to_fasta method to convert the PDB format file to FASTA format.
+         python pdb_to_fasta.py --pdb_file=path/[protein.pdb] --fasta_file=path/[results.fasta]
 
          --pdb_file The filepath of protein for conversion, it can deal with the format of '.pdb'.
          --fasta_file The output path of the conversion results.
-   ###### 3.The PSIPRED tool was used to predict the secondary structure sequence of the protein
-   ###### 4.Extract features based on the secondary structure sequence of the protein and make predictions
+   ##### ③Use the PISPRED to predict the secondary structure sequence of the protein.
+         cd psipred/
+         ./runpsipred path/[resulfs.fasta]
+   ##### ④Predict the structural classification of the protein.
+         python classifier.py --horiz_file_path=path/[your.horiz]
 
+         --horiz_file_path The filepath to the horiz file predicted by PSIPRED.
 ### (2).  Protein binding pockets prediction    
 
     python scripts/predict.py --input data/test_protein.pdb --output prediction_output --model baseline_model.hdf --format pdb
