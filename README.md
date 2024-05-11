@@ -1,6 +1,6 @@
 ## LVpocket
-  We propose a deep learning model- LVpocket, which combines the strength of the V-NET model and the ResNet model to predict protein-ligand binding pockets, which could solve the problems of imbalanced sample data, gradient disappearance, and explosion during training. Specially, we preprocess the data from scPDB and divide the proteins into four classes: all α, all β, α + β, α / β, which we use to fine-tune four models which have different hyperparameters based on LVPocket to customize a predictive model for each classification protein structure. The results of our model on three independent data sets highlight its better performance over current state-of-the-art methods and its ability to generalize novel protein structures well.
-
+  We proposed LVPocket, a novel method that synergistically captures both local and global information of protein data through the integration of Transformer encoders, which help the model achieve better performance in binding pockets prediction. And then we tailored prediction models for data of four distinct structural classes of proteins using the transfer learning. The four fine-tuned models were trained on the baseline LVPocket model which was trained on the sc-PDB dataset. LVPocket exhibits superior performance on three independent datasets compared to current state-of-the-art methods. Additionally, the fine-tuned model outperforms the baseline model in terms of performance. 
+  In addition, we have developed a protein structure classifier(SCOP classifier) to help users confirm the structure classification of the proteins used. And the results could provide reference for users when choosing protein binding pocket prediction models.
 
 
 #  Usage
