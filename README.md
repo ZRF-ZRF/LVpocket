@@ -38,9 +38,13 @@ You can choose baseline model or SCOP fine-tuned models to predict protein bindi
 
 ### (1). The classification of protein structure
 
-##### Additional: If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
-   ###### 1.Install PSIPRED
-   ###### 2.Use the pdb_to_fasta method to convert the PDB format file to FASTA format
+#### Additional: If you want to know which structure class your input protein is, you can use the protein structure classifier we built to do so.The usage process of this method is as follows:
+   ##### ①Install PSIPRED. The download address: http://bioinfadmin.cs.ucl.ac.uk/downloads/psipred/
+   ##### ②Use the pdb_to_fasta method to convert the PDB format file to FASTA format
+         python pdb_to_fasta.py --pdb_file=path/your.pdb --fasta_file=path/you.fasta
+
+         --pdb_file The filepath of protein for conversion, it can deal with the format of '.pdb'.
+         --fasta_file The output path of the conversion results.
    ###### 3.The PSIPRED tool was used to predict the secondary structure sequence of the protein
    ###### 4.Extract features based on the secondary structure sequence of the protein and make predictions
 
