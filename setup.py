@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="LVPocket",
-    version="0.0.1",
+    version="0.0.3",
     author="CPU-409",
     author_email="3221051463@stu.cpu.edu.cn",
     keywords="protein binding pockets prediction, lvnet",
@@ -28,4 +28,19 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Development Status :: 2 - Pre-Alpha",
     ],
+    # install_requires=[
+    #     'h5py>=2.7',
+    #     'openbabel>=2.4',
+    #     'tfbio >=0.3, <=0.3',
+    #     'scikit-image>=0.13',
+    #     'numpy>=1.12',
+    #     'scipy>=1',
+    #     'keras>=2.1,<2.3',
+    #     'tensorflow>=1.8,<=1.11',
+    #     'tensorflow-gpu',
+    #     'protobuf >=3.6.1, <=3.6.1',
+    #     'tqdm',
+    #     'biopython >=1.78, <=1.79',
+    #
+    # ],
 )
