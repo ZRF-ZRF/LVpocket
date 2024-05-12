@@ -13,17 +13,17 @@ In addition, we have developed a protein structure classifier(SCOP classifier) t
    The Zenodo doi of model files: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10633690.svg)](https://doi.org/10.5281/zenodo.10633690)
 
 ## 2.	 Installation
-####  1.Clone this repository
+####  1.Clone this repository.
     git clone https://github.com/ZRF-ZRF/LVpocket.git
     cd LVpocket
-#### 2.Create the environment with all dependencies
+#### 2.Create the environment with all dependencies.
     conda env create -f environment.yml -n lvpocket
     conda activate lvpocket
-###  3.Optionally run tests to make sure everything works as expected
+###  3.Optionally run tests to make sure everything works as expected.
     conda install pytest
     pytest -v
-###  4.Pip install
-    pip install lvpocket
+###  4.You also could install LVPocket from pip.
+    pip install LVPocket==0.0.3
 ## 3.  Data preparation
 We used scPDB dataset to train our model, you can get the dataset at this link:http://bioinfo-pharma.u-strasbg.fr/scPDB/. Before training, you need to build a training dataset using following code:
 
